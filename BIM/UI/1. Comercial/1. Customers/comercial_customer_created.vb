@@ -20,19 +20,19 @@
 #Region "behaviors"
     Private Sub object_listed()
         With object_search
-            object_listed_document.Datasources(.fn_procedure_search(dop.settings_general_search_docs, "row_visible=1"), "alias_document")
-            object_listed_genre.Datasources(.fn_procedure_search(dop.settings_general_search_genre, "row_visible=1"), "genre_name")
-            object_listed_deptos.Datasources(.fn_procedure_search(dop.settings_general_search_deptos, "row_visible=1"), "department_name")
-            object_listed_source.Datasources(.fn_procedure_search(dop.relationship_customer_person_sources, "row_visible=1"), "source_name")
-            object_listed_knowledge.Datasources(.fn_procedure_search(dop.relationship_customer_knowledge_search, "row_visible=1"), "knowledge_name")
-            object_listed_refered.Datasources(.fn_procedure_search(dop.relationship_customer_person_listed, "c.row_visible=1"), "Nombre del cliente")
-            object_listed_person.Datasources(.fn_procedure_search(dop.entities_workforce_persons_listed, "p.agency_code in (" & sessions.agency_permit & ") and p.row_visible=1"), "Nombre del funcionario")
-            object_text_lookup.EditValue = fn_trace_number("D8")
+            'object_listed_document.Datasources(.fn_procedure_search(dop.settings_general_search_docs, "row_visible=1"), "alias_document")
+            'object_listed_genre.Datasources(.fn_procedure_search(dop.settings_general_search_genre, "row_visible=1"), "genre_name")
+            'object_listed_deptos.Datasources(.fn_procedure_search(dop.settings_general_search_deptos, "row_visible=1"), "department_name")
+            'object_listed_source.Datasources(.fn_procedure_search(dop.relationship_customer_person_sources, "row_visible=1"), "source_name")
+            'object_listed_knowledge.Datasources(.fn_procedure_search(dop.relationship_customer_knowledge_search, "row_visible=1"), "knowledge_name")
+            'object_listed_refered.Datasources(.fn_procedure_search(dop.relationship_customer_person_listed, "c.row_visible=1"), "Nombre del cliente")
+            'object_listed_person.Datasources(.fn_procedure_search(dop.entities_workforce_persons_listed, "p.agency_code in (" & sessions.agency_permit & ") and p.row_visible=1"), "Nombre del funcionario")
+            'object_text_lookup.EditValue = fn_trace_number("D8")
         End With
     End Sub
 
     Private Sub search_person()
-        Dim table As DataTable = object_search.fn_procedure_search(dop.relationship_customer_person_search, "c.number_document='" & object_text_document.Text & "'")
+        Dim table As DataTable '= object_search.fn_procedure_search(dop.relationship_customer_person_search, "c.number_document='" & object_text_document.Text & "'")
 
         If table.Rows.Count >= 1 Then
             With table.Rows(0)
@@ -57,7 +57,6 @@
 
                 'Pregunta si desea ir al modulo de actualizacion del cliente existente
                 If message_text("Desea actualizar la información del cliente seleccionado?", MessageBoxButtons.YesNo) = DialogResult.Yes Then
-                    show_option(New comercial_customer_edited(.Item("Id"), Me))
                 End If
             End With
         End If
@@ -73,7 +72,7 @@
 
     Private Sub deptos_changed(sender As Object, e As EventArgs) Handles object_listed_deptos.EditValueChanged
         If object_listed_deptos.EditValue IsNot Nothing Then
-            object_listed_cities.Datasources(object_search.fn_procedure_search(dop.settings_general_search_cities, "depto_code=" & object_listed_deptos.EditValue), "city_name")
+            '  object_listed_cities.Datasources(object_search.fn_procedure_search(dop.settings_general_search_cities, "depto_code=" & object_listed_deptos.EditValue), "city_name")
         End If
     End Sub
 
@@ -81,27 +80,21 @@
         object_check_optin.CheckState = If(CheckState.Checked, "Aceptación politica de tratamiento de datos", "Rechazo de la politica de tratamiento de datos")
     End Sub
 
-    Private Sub place_address(sender As Object, e As DevExpress.XtraEditors.Controls.ButtonPressedEventArgs) Handles object_text_address.ButtonClick
-        Dim place_addressed As New comercial_customer_addressed
-
-        'Muestra el formulario de direccion con el fondo negro
-        show_flyout(place_addressed)
-
-        'Valida que la dirección se haya creado en el formulario
-        If place_addressed.address_name <> "" Then object_text_address.EditValue = place_addressed.address_name.ToString
-    End Sub
-
     Private Sub camera_taked(sender As Object, e As EventArgs) Handles object_image_photo.DoubleClick
         object_image_photo.ShowTakePictureDialog()
     End Sub
+
+    Private Sub closed_module()
+        start_home.removed_tabbed()
+    End Sub
 #End Region
 
-#Region "methods"
+#Region "options"
     Private Sub saved_option(sender As Object, e As EventArgs) Handles object_button_saved.Click
         If object_component_validate.Validate = True Then
             With object_search.sql_command
                 .CommandType = CommandType.StoredProcedure
-                .CommandText = dop.relationship_customer_person_created.ToString
+                '  .CommandText = dop.relationship_customer_person_created.ToString
 
                 .Parameters.Clear()
                 .Parameters.Add("@document_code", SqlDbType.TinyInt).Value = object_listed_document.EditValue
@@ -130,18 +123,14 @@
                 .Parameters.Add("@text_message", SqlDbType.VarChar, 300).Direction = ParameterDirection.Output
             End With
 
-            If object_search.execute_procedure = True Then
+            If object_search.execute_create <> 0 Then
                 If object_check_form.Checked = True Then
                     defaults_objects(object_panel_container)
                 Else
-                    show_option(lasted_control)
+                    closed_module()
                 End If
             End If
         End If
-    End Sub
-
-    Private Sub closed_option(sender As Object, e As EventArgs) Handles object_button_closed.Click
-        show_option(lasted_control)
     End Sub
 #End Region
 End Class

@@ -19,10 +19,9 @@ Public Class comercial_customer_showed
     End Sub
 #End Region
 
-
 #Region "behaviors"
     Private Sub search_permits()
-        If sessions.admin_user <> 1 Then
+        If sessions.position_rol <> 1 Then
             Dim table As DataTable = sessions.search_permission
 
             If table.Rows.Count > 0 Then
@@ -41,11 +40,12 @@ Public Class comercial_customer_showed
     End Sub
 
     Public Sub reports_show(Optional criteria_search As String = "")
-        Dim source As DataTable = object_search.fn_procedure_search(dop.relationship_customer_person_showed, criteria_search)
+        Dim source As DataTable ' = object_search.fn_procedure_search(dop.relationship_customer_person_showed, criteria_search)
 
         'Limpia los origenes de datos anteriores
         object_datagrid_master.DataSource = Nothing
         object_datagrid_view.Columns.Clear()
+        object_panel_layout.Height = 0
         object_label_count.Text = 0
 
         'comprueba si la consulta tiene filas para mostrar
@@ -134,18 +134,16 @@ Public Class comercial_customer_showed
     Private Sub custom_layout()
         If My.Computer.FileSystem.FileExists("C:\APDA\BIM\bin\" & Me.Name & ".xml") Then object_datagrid_view.RestoreLayoutFromXml("C:\APDA\BIM\bin\" & Me.Name & ".xml")
     End Sub
-#End Region
 
-#Region "listed"
     Private Sub object_listed()
         With object_search
-            object_search_agency.Datasources(.fn_procedure_search(dop.entities_bussines_agency_search, "row_visible=1"), "agency_name")
-            object_search_depto.Datasources(.fn_procedure_search(dop.settings_general_search_deptos, "row_visible=1"), "department_name")
-            object_search_genre.Datasources(.fn_procedure_search(dop.settings_general_search_genre, "row_visible=1"), "genre_name")
-            object_search_city.Datasources(.fn_procedure_search(dop.settings_general_search_cities, "row_visible=1"), "city_name")
-            object_search_person.Datasources(.fn_procedure_search(dop.entities_workforce_persons_listed, "p.row_visible=1"), "Nombre de funcionario")
-            object_search_source.Datasources(.fn_procedure_search(dop.relationship_customer_person_sources, "row_visible=1"), "source_name")
-            object_search_knowledge.Datasources(.fn_procedure_search(dop.relationship_customer_knowledge_search, "row_visible=1"), "knowledge_name")
+            'object_search_agency.Datasources(.fn_procedure_search(dop.entities_bussines_agency_search, "row_visible=1"), "agency_name")
+            object_search_depto.Datasources(.fn_procedure_search(dop.spSettingsGeneralSearch_Deparment, "d.row_visible=1"), "department_name")
+            object_search_genre.Datasources(.fn_procedure_search(dop.spSettingsGeneralSearch_Genre, "g.row_visible=1"), "genre_name")
+            object_search_city.Datasources(.fn_procedure_search(dop.spSettingsGeneralSearch_Cities, "c.row_visible=1"), "city_name")
+            ' object_search_person.Datasources(.fn_procedure_search(dop.entities_workforce_persons_listed, "p.row_visible=1"), "Nombre de funcionario")
+            'object_search_source.Datasources(.fn_procedure_search(dop.relationship_customer_person_sources, "row_visible=1"), "source_name")
+            'object_search_knowledge.Datasources(.fn_procedure_search(dop.relationship_customer_knowledge_search, "row_visible=1"), "knowledge_name")
         End With
     End Sub
 #End Region
@@ -184,7 +182,34 @@ Public Class comercial_customer_showed
     End Sub
 
     Private Sub advance_option(sender As Object, e As EventArgs) Handles object_label_advance.Click
-        show_flyout(New model_object_filtering(process_filtering.customers_objects))
+        Dim filtering_advance As New model_object_filtering(process_filtering.customers_objects)
+
+        If filtering_advance IsNot Nothing Then
+            show_flyout(filtering_advance)
+
+            'Aplica el filtro seleccionado a la busqueda de clientes
+            If filtering_advance.criteria_search <> "" Then reports_show(filtering_advance.criteria_search)
+        End If
+    End Sub
+
+    Private Sub transfered_option(sender As Object, e As EventArgs) Handles object_button_transfer.Click
+        If object_datagrid_view.RowCount > 0 Then
+            If message_text("Está seguro que desea transferir el registro seleccionado?", MessageBoxButtons.YesNo) = DialogResult.Yes Then
+                Dim rows_selected As New List(Of Integer)
+
+                For i As Integer = 0 To object_datagrid_view.DataRowCount - 1
+                    If object_datagrid_view.IsRowSelected(i) = True Then
+                        rows_selected.Add(CInt(object_datagrid_view.GetRowCellValue(i, "Id")))
+                    End If
+                Next
+
+                If rows_selected.Count > 0 Then
+                    show_flyout(New comercial_customer_transfer(rows_selected))
+                Else
+                    message_text("No se detectó filas seleccionadas", MessageBoxButtons.OK)
+                End If
+            End If
+        End If
     End Sub
 
     Private Sub synchronize_option(sender As Object, e As EventArgs) Handles object_button_update.Click
@@ -217,10 +242,6 @@ Public Class comercial_customer_showed
         With object_datagrid_view.OptionsView
             .ShowGroupPanel = If(.ShowGroupPanel = False, True, False)
         End With
-    End Sub
-
-    Private Sub closed_option(sender As Object, e As EventArgs) Handles object_button_close.Click
-        Dispose()
     End Sub
 #End Region
 End Class

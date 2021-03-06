@@ -1,6 +1,4 @@
-﻿Imports System.ComponentModel
-Imports System.IO
-Imports System.Reflection
+﻿Imports System.IO
 
 Public Module Converts
     Public Function fn_transform_bytes(imagen As Image) As Byte()
@@ -14,7 +12,6 @@ Public Module Converts
                 Return Nothing
             End If
         Catch ex As Exception
-            MsgBox("No convirtio a bytes por: " + ex.ToString)
         End Try
         Return arreglo
     End Function

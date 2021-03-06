@@ -20,19 +20,19 @@ Partial Class start_initial_restored
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim EditorButtonImageOptions3 As DevExpress.XtraEditors.Controls.EditorButtonImageOptions = New DevExpress.XtraEditors.Controls.EditorButtonImageOptions()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(start_initial_restored))
-        Dim SerializableAppearanceObject9 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-        Dim SerializableAppearanceObject10 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-        Dim SerializableAppearanceObject11 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-        Dim SerializableAppearanceObject12 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-        Dim ConditionValidationRule3 As DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule = New DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule()
         Dim EditorButtonImageOptions1 As DevExpress.XtraEditors.Controls.EditorButtonImageOptions = New DevExpress.XtraEditors.Controls.EditorButtonImageOptions()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(start_initial_restored))
         Dim SerializableAppearanceObject1 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Dim SerializableAppearanceObject2 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Dim SerializableAppearanceObject3 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Dim SerializableAppearanceObject4 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Dim ConditionValidationRule1 As DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule = New DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule()
+        Dim EditorButtonImageOptions2 As DevExpress.XtraEditors.Controls.EditorButtonImageOptions = New DevExpress.XtraEditors.Controls.EditorButtonImageOptions()
+        Dim SerializableAppearanceObject5 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim SerializableAppearanceObject6 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim SerializableAppearanceObject7 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim SerializableAppearanceObject8 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim ConditionValidationRule2 As DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule = New DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule()
         Me.object_component_tool = New DevExpress.Utils.DefaultToolTipController(Me.components)
         Me.object_panel_container = New DevExpress.XtraEditors.PanelControl()
         Me.object_panel_layout = New System.Windows.Forms.TableLayoutPanel()
@@ -99,7 +99,7 @@ Partial Class start_initial_restored
         Me.object_panel_container.Margin = New System.Windows.Forms.Padding(0)
         Me.object_panel_container.Name = "object_panel_container"
         Me.object_panel_container.Padding = New System.Windows.Forms.Padding(1)
-        Me.object_panel_container.Size = New System.Drawing.Size(488, 648)
+        Me.object_panel_container.Size = New System.Drawing.Size(488, 603)
         Me.object_panel_container.TabIndex = 0
         '
         'object_panel_layout
@@ -132,18 +132,18 @@ Partial Class start_initial_restored
         Me.object_panel_layout.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38.0!))
         Me.object_panel_layout.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24.0!))
         Me.object_panel_layout.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37.0!))
-        Me.object_panel_layout.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 54.0!))
-        Me.object_panel_layout.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 63.0!))
-        Me.object_panel_layout.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 106.0!))
+        Me.object_panel_layout.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 99.0!))
+        Me.object_panel_layout.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 67.0!))
+        Me.object_panel_layout.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 57.0!))
         Me.object_panel_layout.RowStyles.Add(New System.Windows.Forms.RowStyle())
-        Me.object_panel_layout.Size = New System.Drawing.Size(486, 646)
+        Me.object_panel_layout.Size = New System.Drawing.Size(486, 601)
         Me.object_panel_layout.TabIndex = 0
         '
         'object_image_photo
         '
         Me.object_image_photo.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.object_image_photo.EditValue = Global.BIM.My.Resources.Resources.photo_default
-        Me.object_image_photo.Location = New System.Drawing.Point(178, 82)
+        Me.object_image_photo.Location = New System.Drawing.Point(178, 37)
         Me.object_image_photo.Margin = New System.Windows.Forms.Padding(1, 1, 1, 2)
         Me.object_image_photo.MaximumSize = New System.Drawing.Size(126, 126)
         Me.object_image_photo.MinimumSize = New System.Drawing.Size(126, 126)
@@ -171,7 +171,7 @@ Partial Class start_initial_restored
         Me.object_label_subtitle.Appearance.ForeColor = System.Drawing.Color.DimGray
         Me.object_label_subtitle.Appearance.Options.UseFont = True
         Me.object_label_subtitle.Appearance.Options.UseForeColor = True
-        Me.object_label_subtitle.Location = New System.Drawing.Point(78, 216)
+        Me.object_label_subtitle.Location = New System.Drawing.Point(78, 171)
         Me.object_label_subtitle.LookAndFeel.SkinName = "Office 2019 White"
         Me.object_label_subtitle.LookAndFeel.UseDefaultLookAndFeel = False
         Me.object_label_subtitle.Margin = New System.Windows.Forms.Padding(2)
@@ -188,7 +188,7 @@ Partial Class start_initial_restored
         Me.object_label_username.Appearance.ForeColor = System.Drawing.Color.DimGray
         Me.object_label_username.Appearance.Options.UseFont = True
         Me.object_label_username.Appearance.Options.UseForeColor = True
-        Me.object_label_username.Location = New System.Drawing.Point(59, 306)
+        Me.object_label_username.Location = New System.Drawing.Point(59, 261)
         Me.object_label_username.LookAndFeel.SkinName = "Office 2019 White"
         Me.object_label_username.LookAndFeel.UseDefaultLookAndFeel = False
         Me.object_label_username.Margin = New System.Windows.Forms.Padding(5, 1, 1, 1)
@@ -200,7 +200,9 @@ Partial Class start_initial_restored
         'txt_object_account
         '
         Me.txt_object_account.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.txt_object_account.Location = New System.Drawing.Point(59, 324)
+        Me.object_component_validate.SetIconAlignment(Me.txt_object_account, System.Windows.Forms.ErrorIconAlignment.MiddleRight)
+        Me.txt_object_account.line_color = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.txt_object_account.Location = New System.Drawing.Point(59, 279)
         Me.txt_object_account.Margin = New System.Windows.Forms.Padding(5, 0, 0, 0)
         Me.txt_object_account.Name = "txt_object_account"
         Me.txt_object_account.Properties.Appearance.BackColor = System.Drawing.Color.White
@@ -214,8 +216,8 @@ Partial Class start_initial_restored
         Me.txt_object_account.Properties.AutoHeight = False
         Me.txt_object_account.Properties.BeepOnError = False
         Me.txt_object_account.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
-        EditorButtonImageOptions3.Image = CType(resources.GetObject("EditorButtonImageOptions3.Image"), System.Drawing.Image)
-        Me.txt_object_account.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, False, True, False, EditorButtonImageOptions3, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject9, SerializableAppearanceObject10, SerializableAppearanceObject11, SerializableAppearanceObject12, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
+        EditorButtonImageOptions1.Image = CType(resources.GetObject("EditorButtonImageOptions1.Image"), System.Drawing.Image)
+        Me.txt_object_account.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, False, True, False, EditorButtonImageOptions1, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject1, SerializableAppearanceObject2, SerializableAppearanceObject3, SerializableAppearanceObject4, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
         Me.txt_object_account.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower
         Me.txt_object_account.Properties.LookAndFeel.SkinName = "Office 2019 White"
         Me.txt_object_account.Properties.LookAndFeel.UseDefaultLookAndFeel = False
@@ -223,9 +225,9 @@ Partial Class start_initial_restored
         Me.txt_object_account.Properties.UseMaskAsDisplayFormat = True
         Me.txt_object_account.Size = New System.Drawing.Size(368, 35)
         Me.txt_object_account.TabIndex = 1
-        ConditionValidationRule3.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
-        ConditionValidationRule3.ErrorText = "This value is not valid"
-        Me.object_component_validate.SetValidationRule(Me.txt_object_account, ConditionValidationRule3)
+        ConditionValidationRule1.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
+        ConditionValidationRule1.ErrorText = "This value is not valid"
+        Me.object_component_validate.SetValidationRule(Me.txt_object_account, ConditionValidationRule1)
         '
         'object_label_password
         '
@@ -234,7 +236,7 @@ Partial Class start_initial_restored
         Me.object_label_password.Appearance.ForeColor = System.Drawing.Color.DimGray
         Me.object_label_password.Appearance.Options.UseFont = True
         Me.object_label_password.Appearance.Options.UseForeColor = True
-        Me.object_label_password.Location = New System.Drawing.Point(59, 367)
+        Me.object_label_password.Location = New System.Drawing.Point(59, 322)
         Me.object_label_password.LookAndFeel.SkinName = "Office 2019 White"
         Me.object_label_password.LookAndFeel.UseDefaultLookAndFeel = False
         Me.object_label_password.Margin = New System.Windows.Forms.Padding(5, 0, 0, 2)
@@ -246,7 +248,9 @@ Partial Class start_initial_restored
         'txt_object_password
         '
         Me.txt_object_password.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.txt_object_password.Location = New System.Drawing.Point(59, 386)
+        Me.object_component_validate.SetIconAlignment(Me.txt_object_password, System.Windows.Forms.ErrorIconAlignment.MiddleRight)
+        Me.txt_object_password.line_color = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.txt_object_password.Location = New System.Drawing.Point(59, 341)
         Me.txt_object_password.Margin = New System.Windows.Forms.Padding(5, 0, 0, 0)
         Me.txt_object_password.Name = "txt_object_password"
         Me.txt_object_password.Properties.Appearance.BackColor = System.Drawing.Color.White
@@ -259,17 +263,17 @@ Partial Class start_initial_restored
         Me.txt_object_password.Properties.AppearanceFocused.Options.UseBackColor = True
         Me.txt_object_password.Properties.AutoHeight = False
         Me.txt_object_password.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
-        EditorButtonImageOptions1.Image = CType(resources.GetObject("EditorButtonImageOptions1.Image"), System.Drawing.Image)
-        Me.txt_object_password.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, False, True, False, EditorButtonImageOptions1, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject1, SerializableAppearanceObject2, SerializableAppearanceObject3, SerializableAppearanceObject4, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
+        EditorButtonImageOptions2.Image = CType(resources.GetObject("EditorButtonImageOptions2.Image"), System.Drawing.Image)
+        Me.txt_object_password.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, False, True, False, EditorButtonImageOptions2, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject5, SerializableAppearanceObject6, SerializableAppearanceObject7, SerializableAppearanceObject8, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
         Me.txt_object_password.Properties.LookAndFeel.SkinName = "Office 2019 White"
         Me.txt_object_password.Properties.LookAndFeel.UseDefaultLookAndFeel = False
         Me.txt_object_password.Properties.Padding = New System.Windows.Forms.Padding(0, 0, 5, 0)
         Me.txt_object_password.Properties.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txt_object_password.Size = New System.Drawing.Size(368, 35)
         Me.txt_object_password.TabIndex = 2
-        ConditionValidationRule1.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.AnyOf
-        ConditionValidationRule1.ErrorText = "This value is not valid"
-        Me.object_component_validate.SetValidationRule(Me.txt_object_password, ConditionValidationRule1)
+        ConditionValidationRule2.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.AnyOf
+        ConditionValidationRule2.ErrorText = "This value is not valid"
+        Me.object_component_validate.SetValidationRule(Me.txt_object_password, ConditionValidationRule2)
         '
         'object_button_accept
         '
@@ -285,7 +289,7 @@ Partial Class start_initial_restored
         Me.object_button_accept.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.object_button_accept.Font = New System.Drawing.Font("Open Sans Condensed Light", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.object_button_accept.ForeColor = System.Drawing.Color.White
-        Me.object_button_accept.Location = New System.Drawing.Point(124, 477)
+        Me.object_button_accept.Location = New System.Drawing.Point(124, 479)
         Me.object_button_accept.Margin = New System.Windows.Forms.Padding(0)
         Me.object_button_accept.Name = "object_button_accept"
         Me.object_button_accept.Size = New System.Drawing.Size(235, 60)
@@ -302,7 +306,7 @@ Partial Class start_initial_restored
         Me.object_label_generate.Appearance.Options.UseFont = True
         Me.object_label_generate.Appearance.Options.UseForeColor = True
         Me.object_label_generate.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.object_label_generate.Location = New System.Drawing.Point(296, 424)
+        Me.object_label_generate.Location = New System.Drawing.Point(296, 379)
         Me.object_label_generate.LookAndFeel.SkinName = "Office 2019 White"
         Me.object_label_generate.LookAndFeel.UseDefaultLookAndFeel = False
         Me.object_label_generate.Margin = New System.Windows.Forms.Padding(0, 2, 5, 0)
@@ -319,7 +323,7 @@ Partial Class start_initial_restored
         Me.object_button_closed.Appearance.Options.UseFont = True
         Me.object_button_closed.Appearance.Options.UseForeColor = True
         Me.object_button_closed.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.object_button_closed.Location = New System.Drawing.Point(217, 541)
+        Me.object_button_closed.Location = New System.Drawing.Point(217, 545)
         Me.object_button_closed.LookAndFeel.SkinName = "Office 2019 White"
         Me.object_button_closed.LookAndFeel.UseDefaultLookAndFeel = False
         Me.object_button_closed.Margin = New System.Windows.Forms.Padding(0, 2, 5, 0)
@@ -340,19 +344,21 @@ Partial Class start_initial_restored
         Me.Appearance.BackColor = System.Drawing.Color.White
         Me.Appearance.BackColor2 = System.Drawing.Color.White
         Me.Appearance.BorderColor = System.Drawing.Color.White
+        Me.Appearance.ForeColor = System.Drawing.Color.DimGray
         Me.Appearance.Options.UseBackColor = True
         Me.Appearance.Options.UseBorderColor = True
+        Me.Appearance.Options.UseForeColor = True
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
-        Me.ClientSize = New System.Drawing.Size(490, 650)
+        Me.ClientSize = New System.Drawing.Size(490, 605)
+        Me.ControlBox = False
         Me.Controls.Add(Me.object_panel_container)
+        Me.EnableAcrylicAccent = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.IconOptions.Image = Global.BIM.My.Resources.Resources.bim
         Me.KeyPreview = True
         Me.LookAndFeel.SkinName = "Office 2019 White"
         Me.LookAndFeel.UseDefaultLookAndFeel = False
-        Me.MaximizeBox = False
-        Me.MinimizeBox = False
         Me.Name = "start_initial_restored"
         Me.Padding = New System.Windows.Forms.Padding(1)
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

@@ -1,13 +1,11 @@
 ﻿Imports System.Data.SqlClient
-Imports DevExpress.DataAccess.Sql
-Imports DevExpress.DataAccess.Sql.DataApi
 Public NotInheritable Class Connections
     Implements IDisposable
 
 #Region "Objects"
     Private Shared _instance As Connections = Nothing
     Private Shared ReadOnly _sync As New Object
-    Public cnn_nube As SqlConnection
+    Public cnn_cloud As SqlConnection
 #End Region
 
 #Region "methods"
@@ -27,15 +25,15 @@ Public NotInheritable Class Connections
 
     Public Function fn_connection_cloud() As SqlConnection
         Try
-            If cnn_nube Is Nothing Then
-                cnn_nube = New SqlConnection("Data Source=" & fn_text_settings("C0DB", "DSO", "C:\APDA\BIM\settings.ini") & ";Initial Catalog=" & fn_text_settings("C0DB", "DBO", "C:\APDA\BIM\settings.ini") & ";User ID=SA;Password=" & fn_text_settings("C0DB", "IDT", "C:\APDA\BIM\settings.ini"))
-                cnn_nube.Open()
+            If cnn_cloud Is Nothing Then
+                cnn_cloud = New SqlConnection("Data Source=" & fn_text_settings("L0DB", "DSO", "C:\APDA\BIM\settings.ini") & ";Initial Catalog=" & fn_text_settings("L0DB", "DBO", "C:\APDA\BIM\settings.ini") & ";User ID=SA;Password=" & fn_text_settings("L0DB", "IDT", "C:\APDA\BIM\settings.ini"))
+                cnn_cloud.Open()
             End If
         Catch ex As Exception
-            cnn_nube = Nothing
+            cnn_cloud = Nothing
         End Try
 
-        Return cnn_nube
+        Return cnn_cloud
     End Function
 
     Private Sub Dispose() Implements IDisposable.Dispose

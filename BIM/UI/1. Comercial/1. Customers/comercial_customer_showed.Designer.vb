@@ -27,8 +27,8 @@ Partial Class comercial_customer_showed
         Me.object_panel_container = New DevExpress.XtraEditors.XtraScrollableControl()
         Me.object_panel_flyout = New DevExpress.Utils.FlyoutPanel()
         Me.object_panel_actions = New System.Windows.Forms.FlowLayoutPanel()
-        Me.object_button_edited = New System.Windows.Forms.Button()
         Me.object_button_attention = New System.Windows.Forms.Button()
+        Me.object_button_edited = New System.Windows.Forms.Button()
         Me.object_button_resume = New System.Windows.Forms.Button()
         Me.object_button_transfer = New System.Windows.Forms.Button()
         Me.object_datagrid_master = New APDA.[Object].Controls.CustomGrid()
@@ -67,7 +67,6 @@ Partial Class comercial_customer_showed
         Me.object_panel_top = New DevExpress.XtraEditors.PanelControl()
         Me.object_panel_subtitle = New DevExpress.XtraEditors.LabelControl()
         Me.object_label_title = New DevExpress.XtraEditors.LabelControl()
-        Me.object_button_close = New System.Windows.Forms.Button()
         Me.object_component_saved = New DevExpress.XtraEditors.XtraSaveFileDialog(Me.components)
         Me.object_panel_container.SuspendLayout()
         CType(Me.object_panel_flyout, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -152,8 +151,8 @@ Partial Class comercial_customer_showed
         '
         Me.object_component_tool.SetAllowHtmlText(Me.object_panel_actions, DevExpress.Utils.DefaultBoolean.[Default])
         Me.object_panel_actions.BackColor = System.Drawing.Color.White
-        Me.object_panel_actions.Controls.Add(Me.object_button_edited)
         Me.object_panel_actions.Controls.Add(Me.object_button_attention)
+        Me.object_panel_actions.Controls.Add(Me.object_button_edited)
         Me.object_panel_actions.Controls.Add(Me.object_button_resume)
         Me.object_panel_actions.Controls.Add(Me.object_button_transfer)
         Me.object_panel_actions.Dock = System.Windows.Forms.DockStyle.Fill
@@ -165,33 +164,6 @@ Partial Class comercial_customer_showed
         Me.object_panel_actions.Size = New System.Drawing.Size(260, 177)
         Me.object_panel_actions.TabIndex = 0
         Me.object_panel_actions.WrapContents = False
-        '
-        'object_button_edited
-        '
-        Me.object_component_tool.SetAllowHtmlText(Me.object_button_edited, DevExpress.Utils.DefaultBoolean.[Default])
-        Me.object_button_edited.BackColor = System.Drawing.Color.White
-        Me.object_button_edited.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.object_button_edited.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.object_button_edited.FlatAppearance.BorderSize = 0
-        Me.object_button_edited.FlatAppearance.CheckedBackColor = System.Drawing.Color.White
-        Me.object_button_edited.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
-        Me.object_button_edited.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
-        Me.object_button_edited.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.object_button_edited.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.object_button_edited.ForeColor = System.Drawing.Color.DimGray
-        Me.object_button_edited.Image = CType(resources.GetObject("object_button_edited.Image"), System.Drawing.Image)
-        Me.object_button_edited.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.object_button_edited.Location = New System.Drawing.Point(4, 4)
-        Me.object_button_edited.Margin = New System.Windows.Forms.Padding(1)
-        Me.object_button_edited.MaximumSize = New System.Drawing.Size(250, 40)
-        Me.object_button_edited.MinimumSize = New System.Drawing.Size(250, 0)
-        Me.object_button_edited.Name = "object_button_edited"
-        Me.object_button_edited.Size = New System.Drawing.Size(250, 40)
-        Me.object_button_edited.TabIndex = 0
-        Me.object_button_edited.Text = "Modificar"
-        Me.object_button_edited.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.object_button_edited.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.object_button_edited.UseVisualStyleBackColor = False
         '
         'object_button_attention
         '
@@ -208,7 +180,7 @@ Partial Class comercial_customer_showed
         Me.object_button_attention.ForeColor = System.Drawing.Color.DimGray
         Me.object_button_attention.Image = CType(resources.GetObject("object_button_attention.Image"), System.Drawing.Image)
         Me.object_button_attention.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.object_button_attention.Location = New System.Drawing.Point(4, 46)
+        Me.object_button_attention.Location = New System.Drawing.Point(4, 4)
         Me.object_button_attention.Margin = New System.Windows.Forms.Padding(1)
         Me.object_button_attention.MaximumSize = New System.Drawing.Size(250, 40)
         Me.object_button_attention.MinimumSize = New System.Drawing.Size(250, 0)
@@ -219,6 +191,33 @@ Partial Class comercial_customer_showed
         Me.object_button_attention.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.object_button_attention.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.object_button_attention.UseVisualStyleBackColor = False
+        '
+        'object_button_edited
+        '
+        Me.object_component_tool.SetAllowHtmlText(Me.object_button_edited, DevExpress.Utils.DefaultBoolean.[Default])
+        Me.object_button_edited.BackColor = System.Drawing.Color.White
+        Me.object_button_edited.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.object_button_edited.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.object_button_edited.FlatAppearance.BorderSize = 0
+        Me.object_button_edited.FlatAppearance.CheckedBackColor = System.Drawing.Color.White
+        Me.object_button_edited.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.object_button_edited.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
+        Me.object_button_edited.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.object_button_edited.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.object_button_edited.ForeColor = System.Drawing.Color.DimGray
+        Me.object_button_edited.Image = CType(resources.GetObject("object_button_edited.Image"), System.Drawing.Image)
+        Me.object_button_edited.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.object_button_edited.Location = New System.Drawing.Point(4, 46)
+        Me.object_button_edited.Margin = New System.Windows.Forms.Padding(1)
+        Me.object_button_edited.MaximumSize = New System.Drawing.Size(250, 40)
+        Me.object_button_edited.MinimumSize = New System.Drawing.Size(250, 0)
+        Me.object_button_edited.Name = "object_button_edited"
+        Me.object_button_edited.Size = New System.Drawing.Size(250, 40)
+        Me.object_button_edited.TabIndex = 0
+        Me.object_button_edited.Text = "Modificar"
+        Me.object_button_edited.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.object_button_edited.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.object_button_edited.UseVisualStyleBackColor = False
         '
         'object_button_resume
         '
@@ -730,7 +729,7 @@ Partial Class comercial_customer_showed
         Me.object_panel_layout.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.06429!))
         Me.object_panel_layout.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 34.24186!))
         Me.object_panel_layout.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 43.69385!))
-        Me.object_panel_layout.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100.0!))
+        Me.object_panel_layout.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 119.0!))
         Me.object_panel_layout.Controls.Add(Me.object_label_advance, 1, 6)
         Me.object_panel_layout.Controls.Add(Me.object_search_person, 3, 1)
         Me.object_panel_layout.Controls.Add(Me.object_search_agency, 1, 1)
@@ -767,7 +766,7 @@ Partial Class comercial_customer_showed
         Me.object_label_advance.Appearance.Options.UseForeColor = True
         Me.object_panel_layout.SetColumnSpan(Me.object_label_advance, 2)
         Me.object_label_advance.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.object_label_advance.Location = New System.Drawing.Point(406, -18)
+        Me.object_label_advance.Location = New System.Drawing.Point(394, -18)
         Me.object_label_advance.LookAndFeel.SkinName = "Office 2019 White"
         Me.object_label_advance.LookAndFeel.UseDefaultLookAndFeel = False
         Me.object_label_advance.Margin = New System.Windows.Forms.Padding(0)
@@ -780,7 +779,7 @@ Partial Class comercial_customer_showed
         '
         Me.object_search_person.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.object_search_person.line_color = System.Drawing.Color.Silver
-        Me.object_search_person.Location = New System.Drawing.Point(510, 59)
+        Me.object_search_person.Location = New System.Drawing.Point(498, 59)
         Me.object_search_person.Margin = New System.Windows.Forms.Padding(5, 1, 0, 0)
         Me.object_search_person.MaximumSize = New System.Drawing.Size(350, 25)
         Me.object_search_person.MinimumSize = New System.Drawing.Size(350, 25)
@@ -876,7 +875,7 @@ Partial Class comercial_customer_showed
         Me.object_button_search.ForeColor = System.Drawing.Color.White
         Me.object_button_search.Image = CType(resources.GetObject("object_button_search.Image"), System.Drawing.Image)
         Me.object_button_search.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.object_button_search.Location = New System.Drawing.Point(359, 25)
+        Me.object_button_search.Location = New System.Drawing.Point(349, 25)
         Me.object_button_search.Margin = New System.Windows.Forms.Padding(0, 0, 0, 5)
         Me.object_button_search.MaximumSize = New System.Drawing.Size(190, 45)
         Me.object_button_search.MinimumSize = New System.Drawing.Size(190, 45)
@@ -950,7 +949,7 @@ Partial Class comercial_customer_showed
         '
         Me.object_search_age.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.object_search_age.line_color = System.Drawing.Color.Silver
-        Me.object_search_age.Location = New System.Drawing.Point(237, 46)
+        Me.object_search_age.Location = New System.Drawing.Point(232, 46)
         Me.object_search_age.Margin = New System.Windows.Forms.Padding(5, 1, 0, 0)
         Me.object_search_age.MaximumSize = New System.Drawing.Size(350, 25)
         Me.object_search_age.MinimumSize = New System.Drawing.Size(100, 25)
@@ -975,7 +974,7 @@ Partial Class comercial_customer_showed
         '
         Me.object_search_city.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.object_search_city.line_color = System.Drawing.Color.Silver
-        Me.object_search_city.Location = New System.Drawing.Point(510, 66)
+        Me.object_search_city.Location = New System.Drawing.Point(498, 66)
         Me.object_search_city.Margin = New System.Windows.Forms.Padding(5, 1, 0, 0)
         Me.object_search_city.MaximumSize = New System.Drawing.Size(350, 25)
         Me.object_search_city.MinimumSize = New System.Drawing.Size(350, 25)
@@ -1002,7 +1001,7 @@ Partial Class comercial_customer_showed
         '
         Me.object_search_depto.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.object_search_depto.line_color = System.Drawing.Color.Silver
-        Me.object_search_depto.Location = New System.Drawing.Point(510, 85)
+        Me.object_search_depto.Location = New System.Drawing.Point(498, 85)
         Me.object_search_depto.Margin = New System.Windows.Forms.Padding(5, 1, 0, 0)
         Me.object_search_depto.MaximumSize = New System.Drawing.Size(350, 25)
         Me.object_search_depto.MinimumSize = New System.Drawing.Size(350, 25)
@@ -1029,7 +1028,7 @@ Partial Class comercial_customer_showed
         '
         Me.object_search_knowledge.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.object_search_knowledge.line_color = System.Drawing.Color.Silver
-        Me.object_search_knowledge.Location = New System.Drawing.Point(510, 46)
+        Me.object_search_knowledge.Location = New System.Drawing.Point(498, 46)
         Me.object_search_knowledge.Margin = New System.Windows.Forms.Padding(5, 1, 0, 0)
         Me.object_search_knowledge.MaximumSize = New System.Drawing.Size(350, 25)
         Me.object_search_knowledge.MinimumSize = New System.Drawing.Size(350, 25)
@@ -1373,7 +1372,6 @@ Partial Class comercial_customer_showed
         Me.object_panel_top.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
         Me.object_panel_top.Controls.Add(Me.object_panel_subtitle)
         Me.object_panel_top.Controls.Add(Me.object_label_title)
-        Me.object_panel_top.Controls.Add(Me.object_button_close)
         Me.object_panel_top.Dock = System.Windows.Forms.DockStyle.Top
         Me.object_panel_top.Location = New System.Drawing.Point(1, 1)
         Me.object_panel_top.LookAndFeel.SkinName = "Office 2019 White"
@@ -1400,7 +1398,7 @@ Partial Class comercial_customer_showed
         Me.object_panel_subtitle.Margin = New System.Windows.Forms.Padding(0)
         Me.object_panel_subtitle.Name = "object_panel_subtitle"
         Me.object_panel_subtitle.Padding = New System.Windows.Forms.Padding(15, 0, 0, 0)
-        Me.object_panel_subtitle.Size = New System.Drawing.Size(967, 40)
+        Me.object_panel_subtitle.Size = New System.Drawing.Size(997, 40)
         Me.object_panel_subtitle.TabIndex = 0
         Me.object_panel_subtitle.Text = "Las opciones del modulo están condicionadas a los permisos " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "asignados al usuario" &
     "*"
@@ -1425,35 +1423,9 @@ Partial Class comercial_customer_showed
         Me.object_label_title.Margin = New System.Windows.Forms.Padding(0)
         Me.object_label_title.Name = "object_label_title"
         Me.object_label_title.Padding = New System.Windows.Forms.Padding(13, 0, 0, 0)
-        Me.object_label_title.Size = New System.Drawing.Size(967, 49)
+        Me.object_label_title.Size = New System.Drawing.Size(997, 49)
         Me.object_label_title.TabIndex = 0
         Me.object_label_title.Text = "Listado de clientes"
-        '
-        'object_button_close
-        '
-        Me.object_component_tool.SetAllowHtmlText(Me.object_button_close, DevExpress.Utils.DefaultBoolean.[Default])
-        Me.object_button_close.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.object_button_close.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.object_button_close.Dock = System.Windows.Forms.DockStyle.Right
-        Me.object_button_close.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.object_button_close.FlatAppearance.BorderSize = 0
-        Me.object_button_close.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
-        Me.object_button_close.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
-        Me.object_button_close.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.object_button_close.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.object_button_close.ForeColor = System.Drawing.Color.DimGray
-        Me.object_button_close.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.object_button_close.Location = New System.Drawing.Point(977, 1)
-        Me.object_button_close.Margin = New System.Windows.Forms.Padding(0)
-        Me.object_button_close.MaximumSize = New System.Drawing.Size(30, 30)
-        Me.object_button_close.MinimumSize = New System.Drawing.Size(30, 30)
-        Me.object_button_close.Name = "object_button_close"
-        Me.object_button_close.Size = New System.Drawing.Size(30, 30)
-        Me.object_button_close.TabIndex = 0
-        Me.object_button_close.TabStop = False
-        Me.object_button_close.Text = "X"
-        Me.object_button_close.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.object_button_close.UseVisualStyleBackColor = True
         '
         'object_component_saved
         '
@@ -1529,7 +1501,6 @@ Partial Class comercial_customer_showed
     Friend WithEvents object_separator_spliter2 As DevExpress.XtraEditors.SeparatorControl
     Protected WithEvents object_datagrid_navigate As DevExpress.XtraEditors.ControlNavigator
     Protected WithEvents object_button_update As Button
-    Protected WithEvents object_button_export As Button
     Protected WithEvents object_button_panel As Button
     Friend WithEvents object_separator_spliter1 As DevExpress.XtraEditors.SeparatorControl
     Protected WithEvents object_button_create As Button
@@ -1551,8 +1522,8 @@ Partial Class comercial_customer_showed
     Friend WithEvents object_panel_top As DevExpress.XtraEditors.PanelControl
     Friend WithEvents object_panel_subtitle As DevExpress.XtraEditors.LabelControl
     Friend WithEvents object_label_title As DevExpress.XtraEditors.LabelControl
-    Friend WithEvents object_button_close As Button
     Friend WithEvents object_label_filtering As DevExpress.XtraEditors.LabelControl
     Friend WithEvents object_component_saved As DevExpress.XtraEditors.XtraSaveFileDialog
     Friend WithEvents object_label_advance As DevExpress.XtraEditors.LabelControl
+    Protected WithEvents object_button_export As Button
 End Class

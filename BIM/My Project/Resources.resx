@@ -118,9 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="photo_women" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\photo_women.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="options_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\options_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -136,25 +133,13 @@
   <data name="options_gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\options_gray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="options_right" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\options_right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="photo_men" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\photo_men.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="erase_green" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\erase_green.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="erase_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\erase_option.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="options_left" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\options_left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="photo_default" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\photo_default.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="image_usergray" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\User-24-4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

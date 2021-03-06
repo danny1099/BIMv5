@@ -1023,6 +1023,9 @@
         Qw5NwSaUoKx06X2yUpqigC7K8CxQnJZ9V9EERlOfP5SivALOmNGNMeFR3AAAAABJRU5ErkJggg==
 </value>
   </data>
+  <metadata name="object_component_validate.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>192, 20</value>
+  </metadata>
   <data name="EditorButtonImageOptions1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
@@ -1034,9 +1037,6 @@
         R1d1XW8+E8dxLtnqREGbxKqkmO/Blpd4xF7GCN/FM8Vs+TNI0ge1y4dMs50MYwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <metadata name="object_component_validate.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>192, 20</value>
-  </metadata>
   <data name="EditorButtonImageOptions2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO

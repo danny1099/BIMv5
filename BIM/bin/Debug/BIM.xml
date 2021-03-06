@@ -37,27 +37,12 @@ BIM
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:BIM.My.Resources.Resources.image_usergray">
-<summary>
-  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-</summary>
-</member>
 <member name="P:BIM.My.Resources.Resources.options_gray">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
 <member name="P:BIM.My.Resources.Resources.options_green">
-<summary>
-  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:BIM.My.Resources.Resources.options_left">
-<summary>
-  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:BIM.My.Resources.Resources.options_right">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
@@ -73,16 +58,6 @@ BIM
 </summary>
 </member>
 <member name="P:BIM.My.Resources.Resources.photo_default">
-<summary>
-  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:BIM.My.Resources.Resources.photo_men">
-<summary>
-  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:BIM.My.Resources.Resources.photo_women">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
@@ -112,22 +87,12 @@ Represents the strongly named DataTable class.
 Represents the strongly named DataTable class.
 </summary>
 </member>
-<member name="T:BIM.BIM.report_inventoryDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
 <member name="T:BIM.BIM.report_commisionDataTable">
 <summary>
 Represents the strongly named DataTable class.
 </summary>
 </member>
 <member name="T:BIM.BIM.dashboard_wholesalesDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:BIM.BIM.task_kanbanDataTable">
 <summary>
 Represents the strongly named DataTable class.
 </summary>
@@ -152,22 +117,12 @@ Represents strongly named DataRow class.
 Represents strongly named DataRow class.
 </summary>
 </member>
-<member name="T:BIM.BIM.report_inventoryRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
 <member name="T:BIM.BIM.report_commisionRow">
 <summary>
 Represents strongly named DataRow class.
 </summary>
 </member>
 <member name="T:BIM.BIM.dashboard_wholesalesRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:BIM.BIM.task_kanbanRow">
 <summary>
 Represents strongly named DataRow class.
 </summary>
@@ -197,22 +152,12 @@ Row event argument class
 Row event argument class
 </summary>
 </member>
-<member name="T:BIM.BIM.report_inventoryRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
 <member name="T:BIM.BIM.report_commisionRowChangeEvent">
 <summary>
 Row event argument class
 </summary>
 </member>
 <member name="T:BIM.BIM.dashboard_wholesalesRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:BIM.BIM.task_kanbanRowChangeEvent">
 <summary>
 Row event argument class
 </summary>

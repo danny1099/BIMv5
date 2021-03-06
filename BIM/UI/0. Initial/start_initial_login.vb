@@ -86,7 +86,6 @@ Public Class start_initial_login
                     sessions.person_code = .Item("Id")
                     sessions.person_name = .Item("person_name")
                     sessions.agency_code = .Item("agency_code")
-                    sessions.city_code = .Item("city_code")
                     sessions.query_permit = .Item("query_search")
                     sessions.agency_permit = .Item("permit_agency")
                     sessions.user_access = .Item("user_access")
@@ -95,12 +94,12 @@ Public Class start_initial_login
 
                     'check if query level are equal to A
                     If .Item("permits_array").ToString <> "" Then sessions.permits_options = .Item("permits_array")
-                    If .Item("query_level") = "A" Then sessions.admin_user = 1 Else sessions.admin_user = 2
+                    If .Item("query_level") = "A" Then sessions.position_rol = 1 Else sessions.position_rol = 2
                     If .Item("photo_avatar").ToString <> "" Then sessions.person_photo = fn_transform_image(.Item("photo_avatar")) Else sessions.person_photo = My.Resources.photo_default
                     If .Item("current_version").ToString <> fn_version_number(False) Then message_text("La versión que está ejecutando está desactualizada, se requiere la versión: " & .Item("current_version").ToString, MessageBoxButtons.OK)
 
                     'Crea la instancia del home segun el parametro de tipo de session enviado
-                    Dim home As New start_initial_home
+                    Dim home As New start_initial_homes
                     home.Show()
 
                     'Cierra el formulario activo

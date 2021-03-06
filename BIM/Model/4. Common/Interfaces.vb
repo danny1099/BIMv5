@@ -77,27 +77,51 @@ Public Module Interfaces
 
     Public Sub show_flyout(control_object As Control)
         Using fly_out As New model_object_flyout(Application.OpenForms.Cast(Of Form)().FirstOrDefault(Function(x) TypeOf x Is start_initial_homes), control_object)
-            fly_out.ShowDialog()
+            fly_out.ShowDialog(start_home)
         End Using
     End Sub
 
     Private Sub windows_tabbed(object_control As Control)
         Try
             If object_control IsNot Nothing Then
-                'comprueba que la variable menu no sea nula
+                'Comprueba que la variable menu no sea nula
                 If start_home Is Nothing Then start_home = search_home()
 
                 With start_home
-                    'Limpia los paneles existentes para cargar el nuevo enviado
-                    .object_panel_document.Controls.Clear()
+                    If find_tabbed(object_control.Name) Is Nothing Then
+                        Dim tabbed_page As New XtraTabPage
 
-                    'Agrega la pestaña creada  a la vista de pestañas
-                    object_control.Dock = DockStyle.Fill
-                    .object_panel_document.Controls.Add(object_control)
+                        'Define el control en el contenedor de pestaña
+                        object_control.Dock = DockStyle.Fill
+                        tabbed_page.Controls.Add(object_control)
+                        tabbed_page.Name = object_control.Name.ToString
+                        tabbed_page.Text = object_control.Tag.ToString & "     "
+
+                        'Agrega la pestaña creada  a la vista de pestañas
+                        .object_panel_tabbed.TabPages.Add(tabbed_page)
+                    End If
                 End With
             End If
         Catch ex As Exception
+            message_text("Error en el proceso 'windows_tabbed' al intentar ejecutarse: " & ex.Message.ToString, MessageBoxButtons.OK)
         End Try
     End Sub
+
+    Private Function find_tabbed(control_name As String) As Control
+        Try
+            With start_home.object_panel_tabbed
+                For Each c As XtraTabPage In .TabPages
+                    If c.Name = control_name Then
+                        .SelectedTabPage = c
+                        .SelectedTabPage.BringToFront()
+                        Return c
+                    End If
+                Next
+            End With
+        Catch ex As Exception
+        End Try
+
+        Return Nothing
+    End Function
 #End Region
 End Module

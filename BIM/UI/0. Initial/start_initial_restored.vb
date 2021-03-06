@@ -38,7 +38,7 @@ Public Class start_initial_restored
         If object_component_validate.Validate = True Then
             With object_search.sql_command
                 .CommandType = CommandType.StoredProcedure
-                .CommandText = dop.entities_workforce_password_create.ToString
+                ' .CommandText = dop.entities_workforce_password_create.ToString
 
                 .Parameters.Clear()
                 .Parameters.Add("@user_name", SqlDbType.VarChar, 50).Value = txt_object_account.EditValue
@@ -53,7 +53,7 @@ Public Class start_initial_restored
                 .Parameters.Add("@user_code", SqlDbType.SmallInt).Value = sessions.person_code
             End With
 
-            If object_search.execute_procedure = True Then
+            If object_search.execute_create <> 0 Then
                 Close()
             End If
         End If

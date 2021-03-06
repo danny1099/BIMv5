@@ -1,12 +1,12 @@
 ﻿Imports System.Data.SqlClient
 
 Public Class Execute
-    Implements IProcedure, ITables, IDataset, IDisposable
+    Implements IProcedure, ITables, IFunction, IDataset, IDisposable
 
 #Region "objects"
-    Public connection As Connections = Connections.Instance
-    Private Property sql_adapter As SqlDataAdapter
-    Public Property sql_command As SqlCommand
+    Property sql_connection As Connections = Connections.Instance
+    Property sql_adapter As SqlDataAdapter
+    Property sql_command As SqlCommand
 #End Region
 
 #Region "methods"
@@ -14,22 +14,22 @@ Public Class Execute
         sql_command = New SqlCommand
     End Sub
 
-    Public Function execute_procedure(Optional show_message As Boolean = True) As Boolean Implements IProcedure.execute_procedure
-        Dim process_result As Boolean
+    Public Function execute_create(Optional show_message As Boolean = True) As Object Implements IProcedure.execute_create
+        Dim process_executed As New Object
 
         Try
-            With connection
-                If fn_connection_state(.cnn_nube) = ConnectionState.Open Then
-                    sql_command.Connection = .cnn_nube
+            With sql_connection
+                If fn_connection_state(.cnn_cloud) = ConnectionState.Open Then
+                    sql_command.Connection = .cnn_cloud
                     sql_adapter = New SqlDataAdapter(sql_command)
                     sql_adapter.SelectCommand.ExecuteNonQuery()
 
-                    'check if sql_command have parameters output
-                    If sql_command.Parameters("@text_message").Value.ToString.Contains("exitosamente") Then process_result = True
+                    'Comprueba si el proceso a ejecutar tiene el parametro de retorno (Id) que sea diferente a cero (0)
+                    process_executed = If(sql_command.Parameters("@row_affected").Value IsNot Nothing, sql_command.Parameters("@row_affected").Value.ToString, 0)
 
-                    'check is parameter show message  is true an value is not null
+                    'Comprueba que el parametro de mensaje retorno no sea nulo o vacío 
                     If show_message = True Then
-                        If sql_command.Parameters("@text_message").Value.ToString <> "" Then message_text(sql_command.Parameters("@text_message").Value.ToString, MessageBoxButtons.OK)
+                        message_text(sql_command.Parameters("@text_message").Value.ToString, MessageBoxButtons.OK)
                     End If
                 Else
                     message_text("No se pudo establecer conexión al servidor", MessageBoxButtons.OK)
@@ -37,28 +37,31 @@ Public Class Execute
             End With
 
         Catch ex As Exception
-            message_text("Error: " & ex.Message.ToString, MessageBoxButtons.OK)
+            message_text("No se pudo establecer conexión al servidor", MessageBoxButtons.OK)
         Finally
             If Not sql_adapter Is Nothing Then sql_adapter.Dispose()
             If Not sql_command Is Nothing Then sql_command.Dispose()
         End Try
 
-        Return process_result
+        Return process_executed
     End Function
 
-    Public Function execute_table(Optional table_name_ As String = "table_source") As DataTable Implements ITables.execute_table
-        Dim dt As New DataTable With {.TableName = table_name_}
+    Public Function execute_edited(Optional show_message As Boolean = True) As Object Implements IProcedure.execute_edited
+        Dim process_executed As New Object
 
         Try
-            With connection
-                If fn_connection_state(.cnn_nube) = ConnectionState.Open Then
-                    sql_command.Connection = .cnn_nube
+            With sql_connection
+                If fn_connection_state(.cnn_cloud) = ConnectionState.Open Then
+                    sql_command.Connection = .cnn_cloud
                     sql_adapter = New SqlDataAdapter(sql_command)
-                    sql_adapter.Fill(dt)
+                    sql_adapter.SelectCommand.ExecuteNonQuery()
 
-                    'check if sql_command have parameters output
-                    If sql_command.Parameters.Contains("@text_message") Then
-                        If sql_command.Parameters("@text_message").Value.ToString <> "" Then message_text(sql_command.Parameters("@text_message").Value.ToString, MessageBoxButtons.OK)
+                    'Comprueba si el proceso a ejecutar tiene el parametro de retorno (Id) que sea diferente a cero (0)
+                    process_executed = If(sql_command.Parameters("@text_message").Value.ToString.Contains("exitosamente"), True, False)
+
+                    'Comprueba que el parametro de mensaje retorno no sea nulo o vacío 
+                    If show_message = True Then
+                        message_text(sql_command.Parameters("@text_message").Value.ToString, MessageBoxButtons.OK)
                     End If
                 Else
                     message_text("No se pudo establecer conexión al servidor", MessageBoxButtons.OK)
@@ -66,28 +69,28 @@ Public Class Execute
             End With
 
         Catch ex As Exception
-            message_text("Error: " & ex.Message.ToString, MessageBoxButtons.OK)
+            message_text("No se pudo establecer conexión al servidor", MessageBoxButtons.OK)
         Finally
             If Not sql_adapter Is Nothing Then sql_adapter.Dispose()
             If Not sql_command Is Nothing Then sql_command.Dispose()
         End Try
 
-        Return dt
+        Return process_executed
     End Function
 
-    Public Function execute_dataset(Optional table_name As String = "results") As DataSet Implements IDataset.execute_dataset
-        Dim ds As New DataSet
+    Public Function execute_table(Optional table_name_ As String = "table_source", Optional show_message As Boolean = False) As DataTable Implements ITables.execute_table
+        Dim process_executed As New DataTable With {.TableName = table_name_}
 
         Try
-            With connection
-                If fn_connection_state(.cnn_nube) = ConnectionState.Open Then
-                    sql_command.Connection = .cnn_nube
+            With sql_connection
+                If fn_connection_state(.cnn_cloud) = ConnectionState.Open Then
+                    sql_command.Connection = .cnn_cloud
                     sql_adapter = New SqlDataAdapter(sql_command)
-                    sql_adapter.Fill(ds, table_name)
+                    sql_adapter.Fill(process_executed)
 
-                    'check if sql_command have parameters output
+                    'Comprueba que el procedimiento tiene parametro de mensaje retorno
                     If sql_command.Parameters.Contains("@text_message") Then
-                        If sql_command.Parameters("@text_message").Value.ToString <> "" Then message_text(sql_command.Parameters("@text_message").Value.ToString, MessageBoxButtons.OK)
+                        If show_message = True Then If sql_command.Parameters("@text_message").Value.ToString <> "" Then message_text(sql_command.Parameters("@text_message").Value.ToString, MessageBoxButtons.OK)
                     End If
                 Else
                     message_text("No se pudo establecer conexión al servidor", MessageBoxButtons.OK)
@@ -95,53 +98,76 @@ Public Class Execute
             End With
 
         Catch ex As Exception
-            message_text("Error: " & ex.Message.ToString, MessageBoxButtons.OK)
+            message_text("No se pudo establecer conexión al servidor", MessageBoxButtons.OK)
         Finally
             If Not sql_adapter Is Nothing Then sql_adapter.Dispose()
             If Not sql_command Is Nothing Then sql_command.Dispose()
         End Try
 
-        Return ds
+        Return process_executed
     End Function
 
-    Public Function execute_function(Optional show_message As Boolean = True) As Object
-        Dim process_result As New Object
+    Public Function execute_dataset(Optional table_name As String = "table_result") As DataSet Implements IDataset.execute_dataset
+        Dim process_executed As New DataSet
 
         Try
-            With connection
-                If fn_connection_state(.cnn_nube) = ConnectionState.Open Then
-                    sql_command.Connection = .cnn_nube
-                    process_result = sql_command.ExecuteScalar
+            With sql_connection
+                If fn_connection_state(.cnn_cloud) = ConnectionState.Open Then
+                    sql_command.Connection = .cnn_cloud
+                    sql_adapter = New SqlDataAdapter(sql_command)
+                    sql_adapter.Fill(process_executed, table_name)
+
+                    'Comprueba que el procedimiento tiene parametro de mensaje retorno
+                    If sql_command.Parameters.Contains("@text_message") Then message_text(sql_command.Parameters("@text_message").Value.ToString, MessageBoxButtons.OK)
                 Else
                     message_text("No se pudo establecer conexión al servidor", MessageBoxButtons.OK)
                 End If
             End With
 
         Catch ex As Exception
-            message_text("Error: " & ex.Message.ToString, MessageBoxButtons.OK)
+            message_text("No se pudo establecer conexión al servidor", MessageBoxButtons.OK)
+        Finally
+            If Not sql_adapter Is Nothing Then sql_adapter.Dispose()
+            If Not sql_command Is Nothing Then sql_command.Dispose()
+        End Try
+
+        Return process_executed
+    End Function
+
+    Public Function execute_function() As Object Implements IFunction.execute_function
+        Dim process_executed As New Object
+
+        Try
+            With sql_connection
+                If fn_connection_state(.cnn_cloud) = ConnectionState.Open Then
+                    sql_command.Connection = .cnn_cloud
+                    process_executed = sql_command.ExecuteScalar
+                Else
+                    message_text("No se pudo establecer conexión al servidor", MessageBoxButtons.OK)
+                End If
+            End With
+
+        Catch ex As Exception
+            message_text("No se pudo establecer conexión al servidor", MessageBoxButtons.OK)
         Finally
             If Not sql_command Is Nothing Then sql_command.Dispose()
         End Try
 
-        Return process_result
+        Return process_executed
     End Function
 
-    Private Sub Dispose() Implements IDisposable.Dispose
-        'check if sql_command is not nothig to dispose
-        If Not (sql_command Is Nothing) Then sql_command.Dispose()
-
-        'suppress current class instance
-        GC.SuppressFinalize(Me)
-    End Sub
-
-    Private Function fn_connection_state(cnn_ As SqlConnection, Optional cnn_local As Boolean = False) As ConnectionState
+    Private Function fn_connection_state(cnn_ As SqlConnection) As ConnectionState
         If cnn_ IsNot Nothing Then
             If cnn_.State = ConnectionState.Closed Then cnn_.Open()
         Else
-            If connection IsNot Nothing Then cnn_ = connection.fn_connection_cloud
+            If sql_connection IsNot Nothing Then cnn_ = sql_connection.fn_connection_cloud
         End If
 
         Return cnn_.State
     End Function
+
+    Private Sub Dispose() Implements IDisposable.Dispose
+        GC.SuppressFinalize(Me)
+    End Sub
 #End Region
 End Class

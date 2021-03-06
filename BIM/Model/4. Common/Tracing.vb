@@ -26,10 +26,12 @@ Public Module Tracing
                 Next
             End With
 
+            'Devuelve la estructura de datos en formato Json
             Return fn_transform_serialize(tracing_data)
         Catch ex As Exception
-            message_text("Error en el proceso 'trace_to_create' al intentar ejecutarse: " & ex.Message.ToString, MessageBoxButtons.OK)
         End Try
+
+        Return String.Empty
     End Function
 
     Public Function trace_to_create(field As String, new_value As String) As String
@@ -93,11 +95,12 @@ Public Module Tracing
                 Next
             End With
 
+            'Devuelve la estructura de datos en formato Json
             Return fn_transform_serialize(tracing_data)
-
         Catch ex As Exception
-            message_text("Error en el proceso 'trace_to_edited' al intentar ejecutarse: " & ex.Message.ToString, MessageBoxButtons.OK)
         End Try
+
+        Return String.Empty
     End Function
 
     Public Function trace_to_current(container As Control) As DataTable
@@ -124,10 +127,12 @@ Public Module Tracing
                 Next
             End With
 
+            'Devuelve la estructura de datos en formato Json
             Return tracing_data
         Catch ex As Exception
-            message_text("Error en el proceso 'trace_to_current' al intentar ejecutarse: " & ex.Message.ToString, MessageBoxButtons.OK)
         End Try
+
+        Return Nothing
     End Function
 #End Region
 

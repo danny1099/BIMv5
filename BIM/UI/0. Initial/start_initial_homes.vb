@@ -56,25 +56,10 @@ Public Class start_initial_homes
 
     Private Sub element_click(sender As Object, e As ElementClickEventArgs) Handles object_menu_control.ElementClick
         Try
-            If e.Element.Name = "nam_object_dashboard" Then
-                show_option(fn_dashboard_module)
-            Else
-                If Not e.Element.Tag Is Nothing Then show_option(e.Element.Tag.ToString)
-            End If
+            If Not e.Element.Tag Is Nothing Then show_option(e.Element.Tag.ToString)
         Catch ex As Exception
         End Try
     End Sub
-
-    Private Function fn_dashboard_module() As Control
-        Select Case sessions.query_level
-            Case "P" : Return (New reporting_dashboard_leader)
-            Case "O" : Return (New reporting_dashboard_personal)
-            Case "A" : Return (New reporting_dashboard_showed)
-            Case "G" : Return (New reporting_dashboard_showed)
-        End Select
-
-        Return Nothing
-    End Function
 
     Private Sub search_permits()
         'Carga los permisos asociados al usuario
@@ -87,16 +72,16 @@ Public Class start_initial_homes
                     For Each options As AccordionControlElement In item.Elements
                         If options.Name.Contains("group") Then
                             For Each rows As AccordionControlElement In options.Elements
-                                rows.Visible = If(sessions.admin_user = 1, True, If(.Select("option_object='" & rows.Name & "'").Count = 0, False, True))
+                                rows.Visible = If(sessions.position_rol = 1, True, If(.Select("option_object='" & rows.Name & "'").Count = 0, False, True))
                             Next
                         End If
                     Next
 
                     'Oculta la opcion base del menu
-                    item.Visible = If(sessions.admin_user = 1, True, If(.Select("module_object='" & item.Name & "'").Count = 0, False, True))
+                    item.Visible = If(sessions.position_rol = 1, True, If(.Select("module_object='" & item.Name & "'").Count = 0, False, True))
 
                 ElseIf item.Style = ElementStyle.Item Then
-                    item.Visible = If(sessions.admin_user = 1, True, If(.Select("module_object='" & item.Name & "'").Count = 0, False, True))
+                    item.Visible = If(sessions.position_rol = 1, True, If(.Select("module_object='" & item.Name & "'").Count = 0, False, True))
                 End If
             Next
         End With
@@ -106,11 +91,35 @@ Public Class start_initial_homes
         If sender.Tag IsNot Nothing Then group_selected(object_menu_control.Elements.Item(sender.Tag.ToString), Nothing)
     End Sub
 
+    Private Sub closed_tabbed(sender As Object, e As EventArgs) Handles object_panel_tabbed.CloseButtonClick
+        removed_tabbed()
+    End Sub
+
+    Private Sub tabbed_added(sender As Object, e As ControlEventArgs) Handles object_panel_tabbed.ControlAdded
+        If TypeOf (sender) Is XtraTabControl Then
+            Try
+                'Define la pestaña agregada como activa
+                object_panel_tabbed.SelectedTabPage = TryCast(sender, XtraTabPage)
+            Catch ex As Exception
+            End Try
+        End If
+    End Sub
+
+
     Private Sub group_selected(sender As Object, e As EventArgs)
         If sender IsNot Nothing Then
             object_menu_control.ActiveGroup = sender
             object_label_title.Text = sender.Text
         End If
+    End Sub
+
+    Public Sub removed_tabbed()
+        Try
+            With object_panel_tabbed
+                .TabPages.Remove(.SelectedTabPage)
+            End With
+        Catch ex As Exception
+        End Try
     End Sub
 #End Region
 
@@ -124,13 +133,6 @@ Public Class start_initial_homes
     End Sub
 
     Private Sub update_option(sender As Object, e As EventArgs) Handles object_button_update.Click
-        Using person As New Persons
-            sessions.permits_options = If(person.settings_persons_permissions(sessions.person_code), "")
-
-            If sessions.permits_options IsNot Nothing And sessions.permits_options <> "Nothing" Then
-                search_permits()
-            End If
-        End Using
     End Sub
 #End Region
 End Class

@@ -1,36 +1,50 @@
 ﻿Public Module object_data_names
     Public Enum dop
-        'Procedimientos para el grupo general
-        settings_general_search_deptos
-        settings_general_search_cities
-        settings_general_search_country
-        settings_general_search_genre
-        settings_general_search_docs
+        'Consultas de las tablas catalogo del grupo general
+        spSettingsGeneralSearch_Document
+        spSettingsGeneralSearch_Deparment
+        spSettingsGeneralSearch_Cities
+        spSettingsGeneralSearch_Country
+        spSettingsGeneralSearch_Dispatch
+        spSettingsGeneralSearch_Genre
+        spSettingsGeneralSearch_Payment
+        spSettingsGeneralSearch_Quotas
+        spSettingsGeneralSearch_Operator
+        spSettingsGeneralSearch_Stratum
+        spSettingsGeneralSearch_Version
 
-        'Procedimientos del grupo Agencias
-        entities_bussines_agency_search
-        entities_bussines_agency_showed
-        entities_bussines_agency_erased
+        'Procesos para la gestión de cargos
+        spEntitiesBussinesPositions_Create
+        spEntitiesBussinesPositions_Edited
+        spEntitiesBussinesPositions_Erased
+        spEntitiesBussinesPositions_Search
+        spEntitiesBussinesPositions_Viewer
+
+        'Procesos para la gestión de canales
+        spEntitiesBussinesChannel_Create
+        spEntitiesBussinesChannel_Edited
+        spEntitiesBussinesChannel_Erased
+        spEntitiesBussinesChannel_Search
+        spEntitiesBussinesChannel_Viewer
+
+        'Procesos para la gestión de agencias
+        spEntitiesBussinesAgency_Create
+        spEntitiesBussinesAgency_Edited
+        spEntitiesBussinesAgency_Erased
+        spEntitiesBussinesAgency_Search
+        spEntitiesBussinesAgency_Viewer
+
+        'Procesos para la gestión de distribuidores 
+        spEntitiesBussinesDealer_Create
+        spEntitiesBussinesDealer_Edited
+        spEntitiesBussinesDealer_Erased
+        spEntitiesBussinesDealer_Search
+        spEntitiesBussinesDealer_Viewer
+
+        'Procedimientos para la gestión de personal
+        spEntitiesBussinesPersonal_Leader
 
         'Procedimientos para el login de usuarios
         tracing_control_sessions_login
-
-        'Procedimientos para la administración de personal
-        entities_workforce_password_create
-        entities_workforce_persons_showed
-        entities_workforce_persons_search
-        entities_workforce_persons_sellers
-        entities_workforce_persons_listed
-        entities_workforce_persons_leaders
-        entities_workforce_persons_erased
-
-        'Procedimientos para la consulta de clientes
-        relationship_customer_person_created
-        relationship_customer_person_edited
-        relationship_customer_person_showed
-        relationship_customer_person_search
-        relationship_customer_person_sources
-        relationship_customer_person_listed
-        relationship_customer_knowledge_search
     End Enum
 End Module

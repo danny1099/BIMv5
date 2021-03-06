@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class start_initial_homes
     Inherits DevExpress.XtraEditors.XtraForm
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         If disposing AndAlso components IsNot Nothing Then
             components.Dispose()
@@ -17,15 +17,15 @@ Partial Class start_initial_homes
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(start_initial_homes))
-        Dim EditorButtonImageOptions1 As DevExpress.XtraEditors.Controls.EditorButtonImageOptions = New DevExpress.XtraEditors.Controls.EditorButtonImageOptions()
-        Dim SerializableAppearanceObject1 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-        Dim SerializableAppearanceObject2 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-        Dim SerializableAppearanceObject3 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-        Dim SerializableAppearanceObject4 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim EditorButtonImageOptions2 As DevExpress.XtraEditors.Controls.EditorButtonImageOptions = New DevExpress.XtraEditors.Controls.EditorButtonImageOptions()
+        Dim SerializableAppearanceObject5 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim SerializableAppearanceObject6 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim SerializableAppearanceObject7 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim SerializableAppearanceObject8 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Me.object_panel_side = New DevExpress.XtraEditors.PanelControl()
         Me.object_panel_options = New System.Windows.Forms.FlowLayoutPanel()
         Me.object_button_dashboard = New DevExpress.XtraEditors.LabelControl()
@@ -37,10 +37,12 @@ Partial Class start_initial_homes
         Me.object_image_logo = New DevExpress.XtraEditors.PictureEdit()
         Me.object_panel_menu = New DevExpress.XtraEditors.PanelControl()
         Me.object_menu_control = New DevExpress.XtraBars.Navigation.AccordionControl()
-        Me.object_menu_settings = New DevExpress.XtraBars.Navigation.AccordionControlElement()
-        Me.object_menu_personal = New DevExpress.XtraBars.Navigation.AccordionControlElement()
         Me.object_menu_relations = New DevExpress.XtraBars.Navigation.AccordionControlElement()
         Me.object_menu_clients = New DevExpress.XtraBars.Navigation.AccordionControlElement()
+        Me.object_menu_settings = New DevExpress.XtraBars.Navigation.AccordionControlElement()
+        Me.object_menu_position = New DevExpress.XtraBars.Navigation.AccordionControlElement()
+        Me.object_menu_channel = New DevExpress.XtraBars.Navigation.AccordionControlElement()
+        Me.object_menu_agency = New DevExpress.XtraBars.Navigation.AccordionControlElement()
         Me.object_panel_top = New DevExpress.XtraEditors.PanelControl()
         Me.object_label_title = New DevExpress.XtraEditors.LabelControl()
         Me.object_menu_search = New DevExpress.XtraEditors.SearchControl()
@@ -65,9 +67,10 @@ Partial Class start_initial_homes
         Me.object_label_account = New DevExpress.XtraEditors.LabelControl()
         Me.object_image_apda = New DevExpress.XtraEditors.LabelControl()
         Me.object_component_tool = New DevExpress.Utils.DefaultToolTipController(Me.components)
-        Me.object_panel_document = New DevExpress.XtraEditors.PanelControl()
         Me.object_component_badget = New DevExpress.Utils.VisualEffects.AdornerUIManager(Me.components)
         Me.object_badged_notification = New DevExpress.Utils.VisualEffects.Badge()
+        Me.object_panel_tabbed = New DevExpress.XtraTab.XtraTabControl()
+        Me.object_menu_dealer = New DevExpress.XtraBars.Navigation.AccordionControlElement()
         CType(Me.object_panel_side, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.object_panel_side.SuspendLayout()
         Me.object_panel_options.SuspendLayout()
@@ -88,8 +91,8 @@ Partial Class start_initial_homes
         CType(Me.object_separator_stripe1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.object_panel_bottom, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.object_panel_bottom.SuspendLayout()
-        CType(Me.object_panel_document, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.object_component_badget, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.object_panel_tabbed, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'object_panel_side
@@ -330,7 +333,7 @@ Partial Class start_initial_homes
         Me.object_menu_control.Appearance.Item.Default.Options.UseFont = True
         Me.object_menu_control.Appearance.Item.Default.Options.UseForeColor = True
         Me.object_menu_control.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.object_menu_control.Elements.AddRange(New DevExpress.XtraBars.Navigation.AccordionControlElement() {Me.object_menu_settings, Me.object_menu_relations})
+        Me.object_menu_control.Elements.AddRange(New DevExpress.XtraBars.Navigation.AccordionControlElement() {Me.object_menu_relations, Me.object_menu_settings})
         Me.object_menu_control.ItemHeight = 45
         Me.object_menu_control.Location = New System.Drawing.Point(1, 111)
         Me.object_menu_control.LookAndFeel.SkinName = "My Office 2019 White"
@@ -342,22 +345,6 @@ Partial Class start_initial_homes
         Me.object_menu_control.Size = New System.Drawing.Size(288, 536)
         Me.object_menu_control.TabIndex = 0
         Me.object_menu_control.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu
-        '
-        'object_menu_settings
-        '
-        Me.object_menu_settings.Elements.AddRange(New DevExpress.XtraBars.Navigation.AccordionControlElement() {Me.object_menu_personal})
-        Me.object_menu_settings.Expanded = True
-        Me.object_menu_settings.HeaderVisible = False
-        Me.object_menu_settings.ImageOptions.Image = CType(resources.GetObject("object_menu_settings.ImageOptions.Image"), System.Drawing.Image)
-        Me.object_menu_settings.Name = "object_menu_settings"
-        Me.object_menu_settings.Text = "Parametros"
-        '
-        'object_menu_personal
-        '
-        Me.object_menu_personal.ImageOptions.Image = CType(resources.GetObject("object_menu_personal.ImageOptions.Image"), System.Drawing.Image)
-        Me.object_menu_personal.Name = "object_menu_personal"
-        Me.object_menu_personal.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item
-        Me.object_menu_personal.Text = "Administración de personal"
         '
         'object_menu_relations
         '
@@ -374,6 +361,38 @@ Partial Class start_initial_homes
         Me.object_menu_clients.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item
         Me.object_menu_clients.Tag = "comercial_customer_showed"
         Me.object_menu_clients.Text = "Listado de clientes"
+        '
+        'object_menu_settings
+        '
+        Me.object_menu_settings.Elements.AddRange(New DevExpress.XtraBars.Navigation.AccordionControlElement() {Me.object_menu_position, Me.object_menu_channel, Me.object_menu_agency, Me.object_menu_dealer})
+        Me.object_menu_settings.Expanded = True
+        Me.object_menu_settings.ImageOptions.Image = CType(resources.GetObject("object_menu_settings.ImageOptions.Image"), System.Drawing.Image)
+        Me.object_menu_settings.Name = "object_menu_settings"
+        Me.object_menu_settings.Text = "Parametros"
+        '
+        'object_menu_position
+        '
+        Me.object_menu_position.ImageOptions.Image = CType(resources.GetObject("object_menu_position.ImageOptions.Image"), System.Drawing.Image)
+        Me.object_menu_position.Name = "object_menu_position"
+        Me.object_menu_position.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item
+        Me.object_menu_position.Tag = "settings_positions_showed"
+        Me.object_menu_position.Text = "Control de cargos"
+        '
+        'object_menu_channel
+        '
+        Me.object_menu_channel.ImageOptions.Image = CType(resources.GetObject("object_menu_channel.ImageOptions.Image"), System.Drawing.Image)
+        Me.object_menu_channel.Name = "object_menu_channel"
+        Me.object_menu_channel.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item
+        Me.object_menu_channel.Tag = "settings_channels_showed"
+        Me.object_menu_channel.Text = "Canal de ventas"
+        '
+        'object_menu_agency
+        '
+        Me.object_menu_agency.ImageOptions.Image = CType(resources.GetObject("object_menu_agency.ImageOptions.Image"), System.Drawing.Image)
+        Me.object_menu_agency.Name = "object_menu_agency"
+        Me.object_menu_agency.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item
+        Me.object_menu_agency.Tag = "settings_agencys_showed"
+        Me.object_menu_agency.Text = "Puntos de venta"
         '
         'object_panel_top
         '
@@ -458,7 +477,7 @@ Partial Class start_initial_homes
         Me.object_menu_search.Properties.AppearanceReadOnly.Options.UseForeColor = True
         Me.object_menu_search.Properties.AutoHeight = False
         Me.object_menu_search.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
-        Me.object_menu_search.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Repository.ClearButton(), New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Search, "", -1, True, True, True, EditorButtonImageOptions1, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject1, SerializableAppearanceObject2, SerializableAppearanceObject3, SerializableAppearanceObject4, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
+        Me.object_menu_search.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Repository.ClearButton(), New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Search, "", -1, True, True, True, EditorButtonImageOptions2, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject5, SerializableAppearanceObject6, SerializableAppearanceObject7, SerializableAppearanceObject8, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
         Me.object_menu_search.Properties.LookAndFeel.SkinName = "Office 2019 White"
         Me.object_menu_search.Properties.LookAndFeel.UseDefaultLookAndFeel = False
         Me.object_menu_search.Properties.PopupBorderStyle = DevExpress.XtraEditors.Controls.PopupBorderStyles.NoBorder
@@ -935,20 +954,6 @@ Partial Class start_initial_homes
         Me.object_component_tool.DefaultController.ToolTipLocation = DevExpress.Utils.ToolTipLocation.BottomCenter
         Me.object_component_tool.DefaultController.ToolTipType = DevExpress.Utils.ToolTipType.Flyout
         '
-        'object_panel_document
-        '
-        Me.object_component_tool.SetAllowHtmlText(Me.object_panel_document, DevExpress.Utils.DefaultBoolean.[Default])
-        Me.object_panel_document.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
-        Me.object_panel_document.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.object_panel_document.Location = New System.Drawing.Point(346, 111)
-        Me.object_panel_document.LookAndFeel.SkinName = "Office 2019 White"
-        Me.object_panel_document.LookAndFeel.UseDefaultLookAndFeel = False
-        Me.object_panel_document.Margin = New System.Windows.Forms.Padding(0)
-        Me.object_panel_document.Name = "object_panel_document"
-        Me.object_panel_document.Padding = New System.Windows.Forms.Padding(1)
-        Me.object_panel_document.Size = New System.Drawing.Size(1003, 508)
-        Me.object_panel_document.TabIndex = 0
-        '
         'object_component_badget
         '
         Me.object_component_badget.Elements.Add(Me.object_badged_notification)
@@ -963,6 +968,49 @@ Partial Class start_initial_homes
         Me.object_badged_notification.Properties.TextMargin = New System.Windows.Forms.Padding(0, 2, 0, 0)
         Me.object_badged_notification.TargetElement = Me.object_button_notification
         '
+        'object_panel_tabbed
+        '
+        Me.object_panel_tabbed.AppearancePage.Header.Font = New System.Drawing.Font("Open Sans Condensed Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.object_panel_tabbed.AppearancePage.Header.ForeColor = System.Drawing.Color.Gray
+        Me.object_panel_tabbed.AppearancePage.Header.Options.UseFont = True
+        Me.object_panel_tabbed.AppearancePage.Header.Options.UseForeColor = True
+        Me.object_panel_tabbed.AppearancePage.Header.Options.UseTextOptions = True
+        Me.object_panel_tabbed.AppearancePage.Header.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
+        Me.object_panel_tabbed.AppearancePage.HeaderActive.Font = New System.Drawing.Font("Open Sans Condensed Light", 14.25!)
+        Me.object_panel_tabbed.AppearancePage.HeaderActive.ForeColor = System.Drawing.Color.LightSeaGreen
+        Me.object_panel_tabbed.AppearancePage.HeaderActive.Options.UseFont = True
+        Me.object_panel_tabbed.AppearancePage.HeaderActive.Options.UseForeColor = True
+        Me.object_panel_tabbed.AppearancePage.HeaderDisabled.Font = New System.Drawing.Font("Open Sans Condensed Light", 14.25!)
+        Me.object_panel_tabbed.AppearancePage.HeaderDisabled.ForeColor = System.Drawing.Color.Gray
+        Me.object_panel_tabbed.AppearancePage.HeaderDisabled.Options.UseFont = True
+        Me.object_panel_tabbed.AppearancePage.HeaderDisabled.Options.UseForeColor = True
+        Me.object_panel_tabbed.AppearancePage.HeaderHotTracked.Font = New System.Drawing.Font("Open Sans Condensed Light", 14.25!)
+        Me.object_panel_tabbed.AppearancePage.HeaderHotTracked.ForeColor = System.Drawing.Color.Gray
+        Me.object_panel_tabbed.AppearancePage.HeaderHotTracked.Options.UseFont = True
+        Me.object_panel_tabbed.AppearancePage.HeaderHotTracked.Options.UseForeColor = True
+        Me.object_panel_tabbed.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
+        Me.object_panel_tabbed.BorderStylePage = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
+        Me.object_panel_tabbed.ClosePageButtonShowMode = DevExpress.XtraTab.ClosePageButtonShowMode.InActiveTabPageHeader
+        Me.object_panel_tabbed.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.object_panel_tabbed.Location = New System.Drawing.Point(346, 111)
+        Me.object_panel_tabbed.LookAndFeel.SkinName = "My Office 2019 White"
+        Me.object_panel_tabbed.LookAndFeel.UseDefaultLookAndFeel = False
+        Me.object_panel_tabbed.Margin = New System.Windows.Forms.Padding(0)
+        Me.object_panel_tabbed.Name = "object_panel_tabbed"
+        Me.object_panel_tabbed.PaintStyleName = "Skin"
+        Me.object_panel_tabbed.ShowHeaderFocus = DevExpress.Utils.DefaultBoolean.[False]
+        Me.object_panel_tabbed.Size = New System.Drawing.Size(1003, 508)
+        Me.object_panel_tabbed.TabIndex = 0
+        Me.object_panel_tabbed.Transition.AllowTransition = DevExpress.Utils.DefaultBoolean.[True]
+        '
+        'object_menu_dealer
+        '
+        Me.object_menu_dealer.ImageOptions.Image = CType(resources.GetObject("object_menu_dealer.ImageOptions.Image"), System.Drawing.Image)
+        Me.object_menu_dealer.Name = "object_menu_dealer"
+        Me.object_menu_dealer.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item
+        Me.object_menu_dealer.Tag = "settings_dealers_showed"
+        Me.object_menu_dealer.Text = "Distribuidores"
+        '
         'start_initial_homes
         '
         Me.object_component_tool.SetAllowHtmlText(Me, DevExpress.Utils.DefaultBoolean.[Default])
@@ -975,7 +1023,7 @@ Partial Class start_initial_homes
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.CancelButton = Me.object_button_closed
         Me.ClientSize = New System.Drawing.Size(1350, 650)
-        Me.Controls.Add(Me.object_panel_document)
+        Me.Controls.Add(Me.object_panel_tabbed)
         Me.Controls.Add(Me.object_panel_bottom)
         Me.Controls.Add(Me.object_panel_striper)
         Me.Controls.Add(Me.object_panel_actions)
@@ -1012,8 +1060,8 @@ Partial Class start_initial_homes
         CType(Me.object_panel_bottom, System.ComponentModel.ISupportInitialize).EndInit()
         Me.object_panel_bottom.ResumeLayout(False)
         Me.object_panel_bottom.PerformLayout()
-        CType(Me.object_panel_document, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.object_component_badget, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.object_panel_tabbed, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1054,10 +1102,13 @@ Partial Class start_initial_homes
     Friend WithEvents object_component_badget As DevExpress.Utils.VisualEffects.AdornerUIManager
     Friend WithEvents object_badged_notification As DevExpress.Utils.VisualEffects.Badge
     Friend WithEvents object_menu_control As DevExpress.XtraBars.Navigation.AccordionControl
-    Friend WithEvents object_menu_settings As DevExpress.XtraBars.Navigation.AccordionControlElement
-    Friend WithEvents object_menu_personal As DevExpress.XtraBars.Navigation.AccordionControlElement
     Friend WithEvents object_menu_relations As DevExpress.XtraBars.Navigation.AccordionControlElement
     Friend WithEvents object_menu_clients As DevExpress.XtraBars.Navigation.AccordionControlElement
-    Friend WithEvents object_panel_document As DevExpress.XtraEditors.PanelControl
     Friend WithEvents TextEdit1 As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents object_panel_tabbed As DevExpress.XtraTab.XtraTabControl
+    Friend WithEvents object_menu_settings As DevExpress.XtraBars.Navigation.AccordionControlElement
+    Friend WithEvents object_menu_position As DevExpress.XtraBars.Navigation.AccordionControlElement
+    Friend WithEvents object_menu_channel As DevExpress.XtraBars.Navigation.AccordionControlElement
+    Friend WithEvents object_menu_agency As DevExpress.XtraBars.Navigation.AccordionControlElement
+    Friend WithEvents object_menu_dealer As DevExpress.XtraBars.Navigation.AccordionControlElement
 End Class

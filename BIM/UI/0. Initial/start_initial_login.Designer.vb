@@ -305,6 +305,8 @@ Partial Class start_initial_login
         'txt_object_account
         '
         Me.txt_object_account.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.object_component_validate.SetIconAlignment(Me.txt_object_account, System.Windows.Forms.ErrorIconAlignment.MiddleRight)
+        Me.txt_object_account.line_color = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.txt_object_account.Location = New System.Drawing.Point(48, 305)
         Me.txt_object_account.Margin = New System.Windows.Forms.Padding(5, 0, 0, 0)
         Me.txt_object_account.Name = "txt_object_account"
@@ -351,6 +353,8 @@ Partial Class start_initial_login
         'txt_object_password
         '
         Me.txt_object_password.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.object_component_validate.SetIconAlignment(Me.txt_object_password, System.Windows.Forms.ErrorIconAlignment.MiddleRight)
+        Me.txt_object_password.line_color = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.txt_object_password.Location = New System.Drawing.Point(48, 369)
         Me.txt_object_password.Margin = New System.Windows.Forms.Padding(5, 0, 0, 0)
         Me.txt_object_password.Name = "txt_object_password"

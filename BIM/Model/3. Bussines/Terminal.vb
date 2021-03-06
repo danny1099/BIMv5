@@ -1,7 +1,6 @@
 ﻿Imports System.Deployment.Application
-Imports System.Net
 Imports System.Net.NetworkInformation
-Imports System.IO
+Imports System.Net
 
 Public Module Terminal
     Public Function fn_ip_address() As String
@@ -65,37 +64,12 @@ Public Module Terminal
         Return version_number
     End Function
 
-    Public Function fn_date_oracle() As String
-        Return Year(Now) & Format(Month(Now), "D2") & Format(Now.Day, "D2")
-    End Function
-
-    Public Function fn_date_oracle(event_date As Date) As String
-        Return Year(event_date) & Format(Month(event_date), "D2")
-    End Function
-
     Public Function fn_text_extension(file_name As String) As String
         Return New IO.FileInfo(file_name).Extension
     End Function
 
     Public Function fn_text_filename(file_name As String) As String
         Return New IO.FileInfo(file_name).Name
-    End Function
-
-    Public Function fn_generate_copy(source_path As String, destiny_path As String) As Boolean
-        My.Computer.FileSystem.CopyFile(source_path, destiny_path, FileIO.UIOption.OnlyErrorDialogs, FileIO.UICancelOption.DoNothing)
-        Return My.Computer.FileSystem.FileExists(destiny_path)
-    End Function
-
-    Public Function fn_process_closed(process_name As String) As Process
-        Dim process_ As Process
-
-        For Each process_ In Process.GetProcesses
-            If process_.MainWindowTitle = process_name Then
-                Return process_
-            End If
-        Next
-
-        Return Nothing
     End Function
 
     Public Sub fn_process_created(process_name As String)

@@ -24,7 +24,6 @@ Partial Class comercial_customer_created
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(comercial_customer_created))
-        Dim ConditionValidationRule13 As DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule = New DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule()
         Dim ConditionValidationRule1 As DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule = New DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule()
         Dim ConditionValidationRule2 As DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule = New DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule()
         Dim ConditionValidationRule3 As DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule = New DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule()
@@ -32,30 +31,31 @@ Partial Class comercial_customer_created
         Dim ConditionValidationRule5 As DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule = New DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule()
         Dim ConditionValidationRule6 As DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule = New DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule()
         Dim ConditionValidationRule7 As DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule = New DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule()
-        Dim EditorButtonImageOptions5 As DevExpress.XtraEditors.Controls.EditorButtonImageOptions = New DevExpress.XtraEditors.Controls.EditorButtonImageOptions()
-        Dim SerializableAppearanceObject17 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-        Dim SerializableAppearanceObject18 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-        Dim SerializableAppearanceObject19 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-        Dim SerializableAppearanceObject20 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim ConditionValidationRule8 As DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule = New DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule()
         Dim EditorButtonImageOptions1 As DevExpress.XtraEditors.Controls.EditorButtonImageOptions = New DevExpress.XtraEditors.Controls.EditorButtonImageOptions()
         Dim SerializableAppearanceObject1 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Dim SerializableAppearanceObject2 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Dim SerializableAppearanceObject3 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Dim SerializableAppearanceObject4 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-        Dim ConditionValidationRule8 As DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule = New DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule()
         Dim EditorButtonImageOptions2 As DevExpress.XtraEditors.Controls.EditorButtonImageOptions = New DevExpress.XtraEditors.Controls.EditorButtonImageOptions()
         Dim SerializableAppearanceObject5 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Dim SerializableAppearanceObject6 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Dim SerializableAppearanceObject7 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Dim SerializableAppearanceObject8 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim ConditionValidationRule9 As DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule = New DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule()
         Dim EditorButtonImageOptions3 As DevExpress.XtraEditors.Controls.EditorButtonImageOptions = New DevExpress.XtraEditors.Controls.EditorButtonImageOptions()
         Dim SerializableAppearanceObject9 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Dim SerializableAppearanceObject10 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Dim SerializableAppearanceObject11 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Dim SerializableAppearanceObject12 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-        Dim ConditionValidationRule9 As DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule = New DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule()
+        Dim EditorButtonImageOptions4 As DevExpress.XtraEditors.Controls.EditorButtonImageOptions = New DevExpress.XtraEditors.Controls.EditorButtonImageOptions()
+        Dim SerializableAppearanceObject13 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim SerializableAppearanceObject14 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim SerializableAppearanceObject15 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim SerializableAppearanceObject16 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Dim ConditionValidationRule10 As DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule = New DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule()
         Dim ConditionValidationRule11 As DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule = New DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule()
+        Dim ConditionValidationRule12 As DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule = New DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule()
         Me.object_panel_container = New DevExpress.XtraEditors.XtraScrollableControl()
         Me.object_listed_document = New APDA.[Object].Controls.ComboboxEdit()
         Me.object_label_lookup = New DevExpress.XtraEditors.LabelControl()
@@ -104,7 +104,6 @@ Partial Class comercial_customer_created
         Me.object_listed_refered = New APDA.[Object].Controls.ComboboxSearch()
         Me.object_datagrid_refered = New DevExpress.XtraGrid.Views.Grid.GridView()
         Me.object_label_refered = New DevExpress.XtraEditors.LabelControl()
-        Me.object_button_closed = New System.Windows.Forms.Button()
         Me.object_image_photos = New DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit()
         Me.object_component_validate = New DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider(Me.components)
         Me.object_panel_container.SuspendLayout()
@@ -187,7 +186,6 @@ Partial Class comercial_customer_created
         Me.object_panel_container.Controls.Add(Me.object_label_information)
         Me.object_panel_container.Controls.Add(Me.object_listed_refered)
         Me.object_panel_container.Controls.Add(Me.object_label_refered)
-        Me.object_panel_container.Controls.Add(Me.object_button_closed)
         Me.object_panel_container.Dock = System.Windows.Forms.DockStyle.Fill
         Me.object_panel_container.FireScrollEventOnMouseWheel = True
         Me.object_panel_container.Location = New System.Drawing.Point(1, 1)
@@ -201,6 +199,7 @@ Partial Class comercial_customer_created
         '
         'object_listed_document
         '
+        Me.object_component_validate.SetIconAlignment(Me.object_listed_document, System.Windows.Forms.ErrorIconAlignment.MiddleRight)
         Me.object_listed_document.Location = New System.Drawing.Point(66, 190)
         Me.object_listed_document.Margin = New System.Windows.Forms.Padding(0)
         Me.object_listed_document.Name = "object_listed_document"
@@ -328,6 +327,7 @@ Partial Class comercial_customer_created
         '
         'object_text_description
         '
+        Me.object_component_validate.SetIconAlignment(Me.object_text_description, System.Windows.Forms.ErrorIconAlignment.MiddleRight)
         Me.object_text_description.Location = New System.Drawing.Point(554, 662)
         Me.object_text_description.Margin = New System.Windows.Forms.Padding(0)
         Me.object_text_description.Name = "object_text_description"
@@ -416,6 +416,7 @@ Partial Class comercial_customer_created
         '
         'object_listed_knowledge
         '
+        Me.object_component_validate.SetIconAlignment(Me.object_listed_knowledge, System.Windows.Forms.ErrorIconAlignment.MiddleRight)
         Me.object_listed_knowledge.Location = New System.Drawing.Point(247, 726)
         Me.object_listed_knowledge.Margin = New System.Windows.Forms.Padding(0)
         Me.object_listed_knowledge.Name = "object_listed_knowledge"
@@ -463,9 +464,9 @@ Partial Class comercial_customer_created
         Me.object_listed_knowledge.Size = New System.Drawing.Size(197, 30)
         Me.object_listed_knowledge.TabIndex = 18
         Me.object_listed_knowledge.Tag = "CEE"
-        ConditionValidationRule13.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
-        ConditionValidationRule13.ErrorText = "This value is not valid"
-        Me.object_component_validate.SetValidationRule(Me.object_listed_knowledge, ConditionValidationRule13)
+        ConditionValidationRule1.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
+        ConditionValidationRule1.ErrorText = "This value is not valid"
+        Me.object_component_validate.SetValidationRule(Me.object_listed_knowledge, ConditionValidationRule1)
         '
         'object_label_knowledge
         '
@@ -484,6 +485,7 @@ Partial Class comercial_customer_created
         '
         'object_listed_source
         '
+        Me.object_component_validate.SetIconAlignment(Me.object_listed_source, System.Windows.Forms.ErrorIconAlignment.MiddleRight)
         Me.object_listed_source.Location = New System.Drawing.Point(64, 726)
         Me.object_listed_source.Margin = New System.Windows.Forms.Padding(0)
         Me.object_listed_source.Name = "object_listed_source"
@@ -531,9 +533,9 @@ Partial Class comercial_customer_created
         Me.object_listed_source.Size = New System.Drawing.Size(174, 30)
         Me.object_listed_source.TabIndex = 17
         Me.object_listed_source.Tag = "Fuente"
-        ConditionValidationRule1.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
-        ConditionValidationRule1.ErrorText = "This value is not valid"
-        Me.object_component_validate.SetValidationRule(Me.object_listed_source, ConditionValidationRule1)
+        ConditionValidationRule2.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
+        ConditionValidationRule2.ErrorText = "This value is not valid"
+        Me.object_component_validate.SetValidationRule(Me.object_listed_source, ConditionValidationRule2)
         '
         'object_label_source
         '
@@ -568,6 +570,7 @@ Partial Class comercial_customer_created
         'object_listed_person
         '
         Me.object_listed_person.EditValue = ""
+        Me.object_component_validate.SetIconAlignment(Me.object_listed_person, System.Windows.Forms.ErrorIconAlignment.MiddleRight)
         Me.object_listed_person.Location = New System.Drawing.Point(64, 662)
         Me.object_listed_person.Margin = New System.Windows.Forms.Padding(0)
         Me.object_listed_person.Name = "object_listed_person"
@@ -618,9 +621,9 @@ Partial Class comercial_customer_created
         Me.object_listed_person.Size = New System.Drawing.Size(380, 30)
         Me.object_listed_person.TabIndex = 16
         Me.object_listed_person.Tag = "Responsable"
-        ConditionValidationRule2.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
-        ConditionValidationRule2.ErrorText = "This value is not valid"
-        Me.object_component_validate.SetValidationRule(Me.object_listed_person, ConditionValidationRule2)
+        ConditionValidationRule3.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
+        ConditionValidationRule3.ErrorText = "This value is not valid"
+        Me.object_component_validate.SetValidationRule(Me.object_listed_person, ConditionValidationRule3)
         '
         'object_datagrid_person
         '
@@ -632,6 +635,7 @@ Partial Class comercial_customer_created
         '
         'object_listed_genre
         '
+        Me.object_component_validate.SetIconAlignment(Me.object_listed_genre, System.Windows.Forms.ErrorIconAlignment.MiddleRight)
         Me.object_listed_genre.Location = New System.Drawing.Point(741, 190)
         Me.object_listed_genre.Margin = New System.Windows.Forms.Padding(0)
         Me.object_listed_genre.Name = "object_listed_genre"
@@ -679,12 +683,13 @@ Partial Class comercial_customer_created
         Me.object_listed_genre.Size = New System.Drawing.Size(192, 30)
         Me.object_listed_genre.TabIndex = 5
         Me.object_listed_genre.Tag = "Genero"
-        ConditionValidationRule3.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
-        ConditionValidationRule3.ErrorText = "This value is not valid"
-        Me.object_component_validate.SetValidationRule(Me.object_listed_genre, ConditionValidationRule3)
+        ConditionValidationRule4.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
+        ConditionValidationRule4.ErrorText = "This value is not valid"
+        Me.object_component_validate.SetValidationRule(Me.object_listed_genre, ConditionValidationRule4)
         '
         'object_listed_cities
         '
+        Me.object_component_validate.SetIconAlignment(Me.object_listed_cities, System.Windows.Forms.ErrorIconAlignment.MiddleRight)
         Me.object_listed_cities.Location = New System.Drawing.Point(715, 394)
         Me.object_listed_cities.Margin = New System.Windows.Forms.Padding(0)
         Me.object_listed_cities.Name = "object_listed_cities"
@@ -732,12 +737,13 @@ Partial Class comercial_customer_created
         Me.object_listed_cities.Size = New System.Drawing.Size(219, 30)
         Me.object_listed_cities.TabIndex = 13
         Me.object_listed_cities.Tag = "Ciudad"
-        ConditionValidationRule4.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
-        ConditionValidationRule4.ErrorText = "This value is not valid"
-        Me.object_component_validate.SetValidationRule(Me.object_listed_cities, ConditionValidationRule4)
+        ConditionValidationRule5.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
+        ConditionValidationRule5.ErrorText = "This value is not valid"
+        Me.object_component_validate.SetValidationRule(Me.object_listed_cities, ConditionValidationRule5)
         '
         'object_listed_deptos
         '
+        Me.object_component_validate.SetIconAlignment(Me.object_listed_deptos, System.Windows.Forms.ErrorIconAlignment.MiddleRight)
         Me.object_listed_deptos.Location = New System.Drawing.Point(553, 394)
         Me.object_listed_deptos.Margin = New System.Windows.Forms.Padding(0)
         Me.object_listed_deptos.Name = "object_listed_deptos"
@@ -785,9 +791,9 @@ Partial Class comercial_customer_created
         Me.object_listed_deptos.Size = New System.Drawing.Size(152, 30)
         Me.object_listed_deptos.TabIndex = 12
         Me.object_listed_deptos.Tag = "Departamento"
-        ConditionValidationRule5.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
-        ConditionValidationRule5.ErrorText = "This value is not valid"
-        Me.object_component_validate.SetValidationRule(Me.object_listed_deptos, ConditionValidationRule5)
+        ConditionValidationRule6.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
+        ConditionValidationRule6.ErrorText = "This value is not valid"
+        Me.object_component_validate.SetValidationRule(Me.object_listed_deptos, ConditionValidationRule6)
         '
         'object_label_name
         '
@@ -854,6 +860,7 @@ Partial Class comercial_customer_created
         '
         'object_text_neighborhood
         '
+        Me.object_component_validate.SetIconAlignment(Me.object_text_neighborhood, System.Windows.Forms.ErrorIconAlignment.MiddleRight)
         Me.object_text_neighborhood.Location = New System.Drawing.Point(553, 520)
         Me.object_text_neighborhood.Margin = New System.Windows.Forms.Padding(0)
         Me.object_text_neighborhood.Name = "object_text_neighborhood"
@@ -886,12 +893,13 @@ Partial Class comercial_customer_created
         Me.object_text_neighborhood.Size = New System.Drawing.Size(380, 30)
         Me.object_text_neighborhood.TabIndex = 15
         Me.object_text_neighborhood.Tag = "Barrio"
-        ConditionValidationRule6.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
-        ConditionValidationRule6.ErrorText = "This value is not valid"
-        Me.object_component_validate.SetValidationRule(Me.object_text_neighborhood, ConditionValidationRule6)
+        ConditionValidationRule7.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
+        ConditionValidationRule7.ErrorText = "This value is not valid"
+        Me.object_component_validate.SetValidationRule(Me.object_text_neighborhood, ConditionValidationRule7)
         '
         'object_text_address
         '
+        Me.object_component_validate.SetIconAlignment(Me.object_text_address, System.Windows.Forms.ErrorIconAlignment.MiddleRight)
         Me.object_text_address.Location = New System.Drawing.Point(553, 457)
         Me.object_text_address.Margin = New System.Windows.Forms.Padding(0)
         Me.object_text_address.Name = "object_text_address"
@@ -926,9 +934,9 @@ Partial Class comercial_customer_created
         Me.object_text_address.Size = New System.Drawing.Size(380, 30)
         Me.object_text_address.TabIndex = 14
         Me.object_text_address.Tag = "Direccion"
-        ConditionValidationRule7.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
-        ConditionValidationRule7.ErrorText = "This value is not valid"
-        Me.object_component_validate.SetValidationRule(Me.object_text_address, ConditionValidationRule7)
+        ConditionValidationRule8.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
+        ConditionValidationRule8.ErrorText = "This value is not valid"
+        Me.object_component_validate.SetValidationRule(Me.object_text_address, ConditionValidationRule8)
         '
         'object_label_cities
         '
@@ -962,6 +970,7 @@ Partial Class comercial_customer_created
         '
         'object_text_lookup
         '
+        Me.object_component_validate.SetIconAlignment(Me.object_text_lookup, System.Windows.Forms.ErrorIconAlignment.MiddleRight)
         Me.object_text_lookup.Location = New System.Drawing.Point(64, 520)
         Me.object_text_lookup.Margin = New System.Windows.Forms.Padding(0)
         Me.object_text_lookup.Name = "object_text_lookup"
@@ -1013,6 +1022,7 @@ Partial Class comercial_customer_created
         '
         'object_text_email
         '
+        Me.object_component_validate.SetIconAlignment(Me.object_text_email, System.Windows.Forms.ErrorIconAlignment.MiddleRight)
         Me.object_text_email.Location = New System.Drawing.Point(64, 457)
         Me.object_text_email.Margin = New System.Windows.Forms.Padding(0)
         Me.object_text_email.Name = "object_text_email"
@@ -1039,8 +1049,8 @@ Partial Class comercial_customer_created
         Me.object_text_email.Properties.AppearanceReadOnly.Options.UseForeColor = True
         Me.object_text_email.Properties.AutoHeight = False
         Me.object_text_email.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple
-        EditorButtonImageOptions5.Image = CType(resources.GetObject("EditorButtonImageOptions5.Image"), System.Drawing.Image)
-        Me.object_text_email.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, False, True, False, EditorButtonImageOptions5, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject17, SerializableAppearanceObject18, SerializableAppearanceObject19, SerializableAppearanceObject20, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
+        EditorButtonImageOptions1.Image = CType(resources.GetObject("EditorButtonImageOptions1.Image"), System.Drawing.Image)
+        Me.object_text_email.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, False, True, False, EditorButtonImageOptions1, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject1, SerializableAppearanceObject2, SerializableAppearanceObject3, SerializableAppearanceObject4, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
         Me.object_text_email.Properties.ButtonsStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
         Me.object_text_email.Properties.LookAndFeel.SkinName = "Office 2019 White"
         Me.object_text_email.Properties.LookAndFeel.UseDefaultLookAndFeel = False
@@ -1068,6 +1078,7 @@ Partial Class comercial_customer_created
         '
         'object_text_cellphone
         '
+        Me.object_component_validate.SetIconAlignment(Me.object_text_cellphone, System.Windows.Forms.ErrorIconAlignment.MiddleRight)
         Me.object_text_cellphone.Location = New System.Drawing.Point(259, 394)
         Me.object_text_cellphone.Margin = New System.Windows.Forms.Padding(0)
         Me.object_text_cellphone.Name = "object_text_cellphone"
@@ -1094,8 +1105,8 @@ Partial Class comercial_customer_created
         Me.object_text_cellphone.Properties.AppearanceReadOnly.Options.UseForeColor = True
         Me.object_text_cellphone.Properties.AutoHeight = False
         Me.object_text_cellphone.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple
-        EditorButtonImageOptions1.Image = CType(resources.GetObject("EditorButtonImageOptions1.Image"), System.Drawing.Image)
-        Me.object_text_cellphone.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, False, True, False, EditorButtonImageOptions1, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject1, SerializableAppearanceObject2, SerializableAppearanceObject3, SerializableAppearanceObject4, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
+        EditorButtonImageOptions2.Image = CType(resources.GetObject("EditorButtonImageOptions2.Image"), System.Drawing.Image)
+        Me.object_text_cellphone.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, False, True, False, EditorButtonImageOptions2, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject5, SerializableAppearanceObject6, SerializableAppearanceObject7, SerializableAppearanceObject8, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
         Me.object_text_cellphone.Properties.ButtonsStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
         Me.object_text_cellphone.Properties.LookAndFeel.SkinName = "Office 2019 White"
         Me.object_text_cellphone.Properties.LookAndFeel.UseDefaultLookAndFeel = False
@@ -1106,9 +1117,9 @@ Partial Class comercial_customer_created
         Me.object_text_cellphone.Size = New System.Drawing.Size(185, 30)
         Me.object_text_cellphone.TabIndex = 8
         Me.object_text_cellphone.Tag = "Celular"
-        ConditionValidationRule8.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
-        ConditionValidationRule8.ErrorText = "This value is not valid"
-        Me.object_component_validate.SetValidationRule(Me.object_text_cellphone, ConditionValidationRule8)
+        ConditionValidationRule9.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
+        ConditionValidationRule9.ErrorText = "This value is not valid"
+        Me.object_component_validate.SetValidationRule(Me.object_text_cellphone, ConditionValidationRule9)
         '
         'object_label_phone
         '
@@ -1127,6 +1138,7 @@ Partial Class comercial_customer_created
         '
         'object_text_phone
         '
+        Me.object_component_validate.SetIconAlignment(Me.object_text_phone, System.Windows.Forms.ErrorIconAlignment.MiddleRight)
         Me.object_text_phone.Location = New System.Drawing.Point(64, 394)
         Me.object_text_phone.Margin = New System.Windows.Forms.Padding(0)
         Me.object_text_phone.Name = "object_text_phone"
@@ -1153,8 +1165,8 @@ Partial Class comercial_customer_created
         Me.object_text_phone.Properties.AppearanceReadOnly.Options.UseForeColor = True
         Me.object_text_phone.Properties.AutoHeight = False
         Me.object_text_phone.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple
-        EditorButtonImageOptions2.Image = CType(resources.GetObject("EditorButtonImageOptions2.Image"), System.Drawing.Image)
-        Me.object_text_phone.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, False, True, False, EditorButtonImageOptions2, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject5, SerializableAppearanceObject6, SerializableAppearanceObject7, SerializableAppearanceObject8, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
+        EditorButtonImageOptions3.Image = CType(resources.GetObject("EditorButtonImageOptions3.Image"), System.Drawing.Image)
+        Me.object_text_phone.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, False, True, False, EditorButtonImageOptions3, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject9, SerializableAppearanceObject10, SerializableAppearanceObject11, SerializableAppearanceObject12, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
         Me.object_text_phone.Properties.ButtonsStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
         Me.object_text_phone.Properties.LookAndFeel.SkinName = "Office 2019 White"
         Me.object_text_phone.Properties.LookAndFeel.UseDefaultLookAndFeel = False
@@ -1220,6 +1232,7 @@ Partial Class comercial_customer_created
         'object_text_birthdate
         '
         Me.object_text_birthdate.EditValue = Nothing
+        Me.object_component_validate.SetIconAlignment(Me.object_text_birthdate, System.Windows.Forms.ErrorIconAlignment.MiddleRight)
         Me.object_text_birthdate.Location = New System.Drawing.Point(553, 190)
         Me.object_text_birthdate.Margin = New System.Windows.Forms.Padding(0)
         Me.object_text_birthdate.Name = "object_text_birthdate"
@@ -1253,19 +1266,20 @@ Partial Class comercial_customer_created
         Me.object_text_birthdate.Properties.AppearanceReadOnly.Options.UseForeColor = True
         Me.object_text_birthdate.Properties.AutoHeight = False
         Me.object_text_birthdate.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple
-        EditorButtonImageOptions3.Image = CType(resources.GetObject("EditorButtonImageOptions3.Image"), System.Drawing.Image)
-        Me.object_text_birthdate.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, True, True, False, EditorButtonImageOptions3, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject9, SerializableAppearanceObject10, SerializableAppearanceObject11, SerializableAppearanceObject12, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
+        EditorButtonImageOptions4.Image = CType(resources.GetObject("EditorButtonImageOptions4.Image"), System.Drawing.Image)
+        Me.object_text_birthdate.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, True, True, False, EditorButtonImageOptions4, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject13, SerializableAppearanceObject14, SerializableAppearanceObject15, SerializableAppearanceObject16, "", Nothing, Nothing, DevExpress.Utils.ToolTipAnchor.[Default])})
         Me.object_text_birthdate.Properties.CalendarTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.object_text_birthdate.Properties.Mask.BeepOnError = True
         Me.object_text_birthdate.Size = New System.Drawing.Size(178, 30)
         Me.object_text_birthdate.TabIndex = 4
         Me.object_text_birthdate.Tag = "Fecha de nacimiento"
-        ConditionValidationRule9.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
-        ConditionValidationRule9.ErrorText = "This value is not valid"
-        Me.object_component_validate.SetValidationRule(Me.object_text_birthdate, ConditionValidationRule9)
+        ConditionValidationRule10.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
+        ConditionValidationRule10.ErrorText = "This value is not valid"
+        Me.object_component_validate.SetValidationRule(Me.object_text_birthdate, ConditionValidationRule10)
         '
         'object_text_document
         '
+        Me.object_component_validate.SetIconAlignment(Me.object_text_document, System.Windows.Forms.ErrorIconAlignment.MiddleRight)
         Me.object_text_document.Location = New System.Drawing.Point(164, 190)
         Me.object_text_document.Margin = New System.Windows.Forms.Padding(0)
         Me.object_text_document.Name = "object_text_document"
@@ -1297,9 +1311,9 @@ Partial Class comercial_customer_created
         Me.object_text_document.Size = New System.Drawing.Size(280, 30)
         Me.object_text_document.TabIndex = 2
         Me.object_text_document.Tag = "Documento"
-        ConditionValidationRule10.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
-        ConditionValidationRule10.ErrorText = "This value is not valid"
-        Me.object_component_validate.SetValidationRule(Me.object_text_document, ConditionValidationRule10)
+        ConditionValidationRule11.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
+        ConditionValidationRule11.ErrorText = "This value is not valid"
+        Me.object_component_validate.SetValidationRule(Me.object_text_document, ConditionValidationRule11)
         '
         'object_label_genre
         '
@@ -1333,6 +1347,7 @@ Partial Class comercial_customer_created
         '
         'object_text_name
         '
+        Me.object_component_validate.SetIconAlignment(Me.object_text_name, System.Windows.Forms.ErrorIconAlignment.MiddleRight)
         Me.object_text_name.Location = New System.Drawing.Point(65, 254)
         Me.object_text_name.Margin = New System.Windows.Forms.Padding(0)
         Me.object_text_name.Name = "object_text_name"
@@ -1364,9 +1379,9 @@ Partial Class comercial_customer_created
         Me.object_text_name.Size = New System.Drawing.Size(380, 30)
         Me.object_text_name.TabIndex = 3
         Me.object_text_name.Tag = "Nombre"
-        ConditionValidationRule11.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
-        ConditionValidationRule11.ErrorText = "This value is not valid"
-        Me.object_component_validate.SetValidationRule(Me.object_text_name, ConditionValidationRule11)
+        ConditionValidationRule12.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank
+        ConditionValidationRule12.ErrorText = "This value is not valid"
+        Me.object_component_validate.SetValidationRule(Me.object_text_name, ConditionValidationRule12)
         '
         'object_label_module
         '
@@ -1406,6 +1421,7 @@ Partial Class comercial_customer_created
         '
         'object_listed_refered
         '
+        Me.object_component_validate.SetIconAlignment(Me.object_listed_refered, System.Windows.Forms.ErrorIconAlignment.MiddleRight)
         Me.object_listed_refered.Location = New System.Drawing.Point(553, 254)
         Me.object_listed_refered.Margin = New System.Windows.Forms.Padding(0)
         Me.object_listed_refered.Name = "object_listed_refered"
@@ -1479,28 +1495,6 @@ Partial Class comercial_customer_created
         Me.object_label_refered.Size = New System.Drawing.Size(59, 16)
         Me.object_label_refered.TabIndex = 0
         Me.object_label_refered.Text = "Referido por"
-        '
-        'object_button_closed
-        '
-        Me.object_button_closed.BackColor = System.Drawing.Color.White
-        Me.object_button_closed.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.object_button_closed.Dock = System.Windows.Forms.DockStyle.Right
-        Me.object_button_closed.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.object_button_closed.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
-        Me.object_button_closed.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
-        Me.object_button_closed.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.object_button_closed.Font = New System.Drawing.Font("Arial Narrow", 9.75!)
-        Me.object_button_closed.ForeColor = System.Drawing.Color.DimGray
-        Me.object_button_closed.Location = New System.Drawing.Point(977, 1)
-        Me.object_button_closed.Margin = New System.Windows.Forms.Padding(0)
-        Me.object_button_closed.MaximumSize = New System.Drawing.Size(30, 30)
-        Me.object_button_closed.MinimumSize = New System.Drawing.Size(30, 30)
-        Me.object_button_closed.Name = "object_button_closed"
-        Me.object_button_closed.Size = New System.Drawing.Size(30, 30)
-        Me.object_button_closed.TabIndex = 35
-        Me.object_button_closed.TabStop = False
-        Me.object_button_closed.Text = "X"
-        Me.object_button_closed.UseVisualStyleBackColor = False
         '
         'object_image_photos
         '
@@ -1610,7 +1604,6 @@ Partial Class comercial_customer_created
     Private WithEvents object_text_description As DevExpress.XtraEditors.MemoEdit
     Friend WithEvents object_button_saved As Button
     Friend WithEvents object_label_lookup As DevExpress.XtraEditors.LabelControl
-    Friend WithEvents object_button_closed As Button
     Friend WithEvents object_component_validate As DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider
     Friend WithEvents object_listed_document As APDA.Object.Controls.ComboboxEdit
 End Class
