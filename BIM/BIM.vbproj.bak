@@ -1,0 +1,2553 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E086556C-9BEA-4D05-B182-1ACE3DF91DFD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>BIM.My.MyApplication</StartupObject>
+    <RootNamespace>BIM</RootNamespace>
+    <AssemblyName>BIM</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>E:\APDA\Proyectos\Projects\BIM\Release\BIM\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>true</UpdatePeriodically>
+    <UpdateRequired>true</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <UpdateUrl>http://apda.byethost31.com/apda/updates/smartket/</UpdateUrl>
+    <TargetCulture>es-CO</TargetCulture>
+    <ProductName>BIM</ProductName>
+    <PublisherName>APDA</PublisherName>
+    <SuiteName>Customer and Sales Management</SuiteName>
+    <MinimumRequiredVersion>3.0.4.170</MinimumRequiredVersion>
+    <WebPage>publish.htm</WebPage>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>172</ApplicationRevision>
+    <ApplicationVersion>3.0.4.172</ApplicationVersion>
+    <UseApplicationTrust>true</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>false</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>BIM.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>true</Prefer32Bit>
+    <WarningLevel>1</WarningLevel>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>BIM.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+    <WarningLevel>1</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>Off</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>bim_ico.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>93C252E830B3CC98EEAC21B45586FA1A1010846E</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>BIMv4_Key.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>BIMv4_Key.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="APDA.Object.Controls, Version=1.0.1.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\APDA\BIM\bin\APDA.Object.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v20.2.Core, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.CodeParser.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.Desktop.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Dialogs.v20.2.Core, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v20.2.Core, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v20.2.Core, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v20.2.Core, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v20.2.UI, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v20.2.UI, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v20.2.Wizard, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraDialogs.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v20.2.Core, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v20.2.Win, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DPFPDevNET, Version=1.6.1.0, Culture=neutral, PublicKeyToken=696774c42ee28c57, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\DigitalPersona\One Touch SDK\.NET\Bin\DPFPDevNET.dll</HintPath>
+    </Reference>
+    <Reference Include="DPFPEngNET, Version=1.6.1.0, Culture=neutral, PublicKeyToken=7fe76e7adf19964b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\DigitalPersona\One Touch SDK\.NET\Bin\DPFPEngNET.dll</HintPath>
+    </Reference>
+    <Reference Include="DPFPGuiNET, Version=1.6.1.0, Culture=neutral, PublicKeyToken=d4f4a0bd9c559145, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\DigitalPersona\One Touch SDK\.NET\Bin\DPFPGuiNET.dll</HintPath>
+    </Reference>
+    <Reference Include="DPFPShrNET, Version=1.6.1.0, Culture=neutral, PublicKeyToken=d902fe275a8d6cf2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\DigitalPersona\One Touch SDK\.NET\Bin\DPFPShrNET.dll</HintPath>
+    </Reference>
+    <Reference Include="DPFPVerNET, Version=1.6.1.0, Culture=neutral, PublicKeyToken=4de0a9c4dcc83984, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\DigitalPersona\One Touch SDK\.NET\Bin\DPFPVerNET.dll</HintPath>
+    </Reference>
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Ionic.Zip">
+      <HintPath>C:\APDA\BIM\bin\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>C:\APDA\BIM\bin\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\APDA\BIM\bin\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\APDA\BIM\bin\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>C:\APDA\BIM\bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SkinBIM2021">
+      <HintPath>C:\APDA\BIM\bin\SkinBIM2021.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="DevExpress.Data" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\Cloud.vb" />
+    <Compile Include="Model\0. Helpers\model_object_cards.Designer.vb">
+      <DependentUpon>model_object_cards.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Model\0. Helpers\model_object_cards.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Model\0. Helpers\model_object_comments.Designer.vb">
+      <DependentUpon>model_object_comments.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Model\0. Helpers\model_object_comments.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\0. Helpers\model_object_notify.Designer.vb">
+      <DependentUpon>model_object_notify.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Model\0. Helpers\model_object_notify.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Model\0. Helpers\model_object_tabbs.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Model\0. Helpers\model_object_tracing.Designer.vb">
+      <DependentUpon>model_object_tracing.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Model\0. Helpers\model_object_tracing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\1. Execution\Execute.vb" />
+    <Compile Include="Model\2. Services\IDataset.vb" />
+    <Compile Include="Model\2. Services\IFunction.vb" />
+    <Compile Include="Model\2. Services\IProcedure.vb" />
+    <Compile Include="Model\2. Services\ITables.vb" />
+    <Compile Include="Model\3. Bussines\Converts.vb" />
+    <Compile Include="Model\3. Bussines\External.vb" />
+    <Compile Include="Model\3. Bussines\LookFeel.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Model\3. Bussines\Session.vb" />
+    <Compile Include="Model\3. Bussines\Terminal.vb" />
+    <Compile Include="Model\4. Common\Effects.vb" />
+    <Compile Include="Model\4. Common\Interfaces.vb" />
+    <Compile Include="Model\4. Common\Messages.vb" />
+    <Compile Include="Model\4. Common\Tracing.vb" />
+    <Compile Include="Model\0. Helpers\model_object_export.Designer.vb">
+      <DependentUpon>model_object_export.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Model\0. Helpers\model_object_export.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\0. Helpers\model_object_notes.Designer.vb">
+      <DependentUpon>model_object_notes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Model\0. Helpers\model_object_notes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\5. Objects\0. General\Audited.vb" />
+    <Compile Include="Model\5. Objects\0. General\Notes.vb" />
+    <Compile Include="Model\5. Objects\0. General\Parameters.vb" />
+    <Compile Include="Model\5. Objects\0. General\Permission.vb" />
+    <Compile Include="Model\5. Objects\1. Comercial\Attentions.vb" />
+    <Compile Include="Model\5. Objects\1. Comercial\Chances.vb" />
+    <Compile Include="Model\5. Objects\1. Comercial\Customer.vb" />
+    <Compile Include="Model\5. Objects\1. Comercial\Grouped.vb" />
+    <Compile Include="Model\5. Objects\2. Wholesales\Capture.vb" />
+    <Compile Include="Model\5. Objects\2. Wholesales\Claimed.vb" />
+    <Compile Include="Model\5. Objects\2. Wholesales\Collection.vb" />
+    <Compile Include="Model\5. Objects\2. Wholesales\Datacredit.vb" />
+    <Compile Include="Model\5. Objects\2. Wholesales\Deliverys.vb" />
+    <Compile Include="Model\5. Objects\2. Wholesales\Guarantee.vb" />
+    <Compile Include="Model\5. Objects\2. Wholesales\Orders.vb" />
+    <Compile Include="Model\5. Objects\2. Wholesales\Request.vb" />
+    <Compile Include="Model\5. Objects\2. Wholesales\Sales.vb" />
+    <Compile Include="Model\5. Objects\3. Commision\Commision.vb" />
+    <Compile Include="Model\5. Objects\3. Commision\Conditions.vb" />
+    <Compile Include="Model\5. Objects\3. Commision\Periods.vb" />
+    <Compile Include="Model\5. Objects\3. Commision\Rules.vb" />
+    <Compile Include="Model\5. Objects\3. Commision\Scales.vb" />
+    <Compile Include="Model\5. Objects\3. Commision\Schemes.vb" />
+    <Compile Include="Model\5. Objects\3. Commision\Values.vb" />
+    <Compile Include="Model\5. Objects\4. Projects\Projects.vb" />
+    <Compile Include="Model\5. Objects\5. Reporting\Reporting.vb" />
+    <Compile Include="Model\5. Objects\6. Settings\Brands.vb" />
+    <Compile Include="Model\5. Objects\6. Settings\Budgets.vb" />
+    <Compile Include="Model\5. Objects\6. Settings\Categorys.vb" />
+    <Compile Include="Model\5. Objects\6. Settings\Products.vb" />
+    <Compile Include="Model\5. Objects\6. Settings\Agencys.vb" />
+    <Compile Include="Model\5. Objects\6. Settings\Channels.vb" />
+    <Compile Include="Model\5. Objects\6. Settings\Dealers.vb" />
+    <Compile Include="Model\5. Objects\6. Settings\Directors.vb" />
+    <Compile Include="Model\5. Objects\6. Settings\Operators.vb" />
+    <Compile Include="Model\5. Objects\6. Settings\Persons.vb" />
+    <Compile Include="Model\5. Objects\6. Settings\Positions.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="UI\0. Initial\start_initial_home.Designer.vb">
+      <DependentUpon>start_initial_home.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\0. Initial\start_initial_home.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\0. Initial\start_initial_login.Designer.vb">
+      <DependentUpon>start_initial_login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\0. Initial\start_initial_login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\0. Initial\start_initial_logined.Designer.vb">
+      <DependentUpon>start_initial_logined.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\0. Initial\start_initial_logined.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\0. Initial\start_initial_restore.Designer.vb">
+      <DependentUpon>start_initial_restore.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\0. Initial\start_initial_restore.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\0. Initial\start_initial_update.Designer.vb">
+      <DependentUpon>start_initial_update.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\0. Initial\start_initial_update.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\1. Comercial\1. Customers\comercial_customer_address.Designer.vb">
+      <DependentUpon>comercial_customer_address.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\1. Comercial\1. Customers\comercial_customer_address.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\1. Comercial\1. Customers\comercial_customer_cluster.Designer.vb">
+      <DependentUpon>comercial_customer_cluster.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\1. Comercial\1. Customers\comercial_customer_cluster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\1. Comercial\1. Customers\comercial_customer_create.Designer.vb">
+      <DependentUpon>comercial_customer_create.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\1. Comercial\1. Customers\comercial_customer_create.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\1. Comercial\1. Customers\comercial_customer_edited.Designer.vb">
+      <DependentUpon>comercial_customer_edited.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\1. Comercial\1. Customers\comercial_customer_edited.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\1. Comercial\1. Customers\comercial_customer_hobbies.Designer.vb">
+      <DependentUpon>comercial_customer_hobbies.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\1. Comercial\1. Customers\comercial_customer_hobbies.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\1. Comercial\1. Customers\comercial_customer_products.Designer.vb">
+      <DependentUpon>comercial_customer_products.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\1. Comercial\1. Customers\comercial_customer_products.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\1. Comercial\1. Customers\comercial_customer_resume.Designer.vb">
+      <DependentUpon>comercial_customer_resume.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\1. Comercial\1. Customers\comercial_customer_resume.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\1. Comercial\1. Customers\comercial_customer_searched.Designer.vb">
+      <DependentUpon>comercial_customer_searched.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\1. Comercial\1. Customers\comercial_customer_searched.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\1. Comercial\1. Customers\comercial_customer_show.Designer.vb">
+      <DependentUpon>comercial_customer_show.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\1. Comercial\1. Customers\comercial_customer_show.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\1. Comercial\1. Customers\comercial_customer_transfer.Designer.vb">
+      <DependentUpon>comercial_customer_transfer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\1. Comercial\1. Customers\comercial_customer_transfer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\1. Comercial\1. Customers\comercial_customer_refered.Designer.vb">
+      <DependentUpon>comercial_customer_refered.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\1. Comercial\1. Customers\comercial_customer_refered.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\1. Comercial\1. Customers\XtraForm1.Designer.vb">
+      <DependentUpon>XtraForm1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\1. Comercial\1. Customers\XtraForm1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\1. Comercial\2. Attentions\comercial_attention_closed.Designer.vb">
+      <DependentUpon>comercial_attention_closed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\1. Comercial\2. Attentions\comercial_attention_closed.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\1. Comercial\2. Attentions\comercial_attention_create.Designer.vb">
+      <DependentUpon>comercial_attention_create.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\1. Comercial\2. Attentions\comercial_attention_create.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\1. Comercial\2. Attentions\comercial_attention_resumen.Designer.vb">
+      <DependentUpon>comercial_attention_resumen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\1. Comercial\2. Attentions\comercial_attention_resumen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\1. Comercial\2. Attentions\Quotation\attention_quotation_create.Designer.vb">
+      <DependentUpon>attention_quotation_create.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\1. Comercial\2. Attentions\Quotation\attention_quotation_create.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\1. Comercial\2. Attentions\comercial_attention_show.Designer.vb">
+      <DependentUpon>comercial_attention_show.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\1. Comercial\2. Attentions\comercial_attention_show.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\1. Comercial\2. Attentions\comercial_attention_transfer.Designer.vb">
+      <DependentUpon>comercial_attention_transfer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\1. Comercial\2. Attentions\comercial_attention_transfer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\1. Comercial\2. Attentions\Quotation\attention_quotation_edited.Designer.vb">
+      <DependentUpon>attention_quotation_edited.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\1. Comercial\2. Attentions\Quotation\attention_quotation_edited.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\1. Comercial\2. Attentions\Quotation\attention_quotation_masive.Designer.vb">
+      <DependentUpon>attention_quotation_masive.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\1. Comercial\2. Attentions\Quotation\attention_quotation_masive.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\1. Comercial\2. Attentions\Quotation\attention_quotation_proofs.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>attention_quotation_proofs.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\1. Comercial\2. Attentions\Quotation\attention_quotation_show.Designer.vb">
+      <DependentUpon>attention_quotation_show.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\1. Comercial\2. Attentions\Quotation\attention_quotation_show.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\1. Comercial\2. Attentions\Quotation\attention_quotation_viewers.Designer.vb">
+      <DependentUpon>attention_quotation_viewers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\1. Comercial\2. Attentions\Quotation\attention_quotation_viewers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\1. Comercial\2. Attentions\Quotation\attention_quotation_wholesales.Designer.vb">
+      <DependentUpon>attention_quotation_wholesales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\1. Comercial\2. Attentions\Quotation\attention_quotation_wholesales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\1. Comercial\3. Groups\comercial_groups_cluster.Designer.vb">
+      <DependentUpon>comercial_groups_cluster.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\1. Comercial\3. Groups\comercial_groups_cluster.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\1. Comercial\3. Groups\comercial_groups_create.Designer.vb">
+      <DependentUpon>comercial_groups_create.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\1. Comercial\3. Groups\comercial_groups_create.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\1. Comercial\3. Groups\comercial_groups_edited.Designer.vb">
+      <DependentUpon>comercial_groups_edited.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\1. Comercial\3. Groups\comercial_groups_edited.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\1. Comercial\3. Groups\comercial_groups_show.Designer.vb">
+      <DependentUpon>comercial_groups_show.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\1. Comercial\3. Groups\comercial_groups_show.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\1. Comercial\4. Chances\comercial_chances_create.Designer.vb">
+      <DependentUpon>comercial_chances_create.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\1. Comercial\4. Chances\comercial_chances_create.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\1. Comercial\4. Chances\comercial_chances_edited.Designer.vb">
+      <DependentUpon>comercial_chances_edited.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\1. Comercial\4. Chances\comercial_chances_edited.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\1. Comercial\4. Chances\comercial_chances_show.Designer.vb">
+      <DependentUpon>comercial_chances_show.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\1. Comercial\4. Chances\comercial_chances_show.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\1. Comercial\4. Chances\comercial_chances_lookup.Designer.vb">
+      <DependentUpon>comercial_chances_lookup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\1. Comercial\4. Chances\comercial_chances_lookup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\1. Comercial\4. Chances\comercial_chances_viewer.Designer.vb">
+      <DependentUpon>comercial_chances_viewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\1. Comercial\4. Chances\comercial_chances_viewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\1. Comercial\4. Chances\Taked\chances_taked_create.Designer.vb">
+      <DependentUpon>chances_taked_create.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\1. Comercial\4. Chances\Taked\chances_taked_create.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\1. Comercial\4. Chances\Taked\chances_taked_massive.Designer.vb">
+      <DependentUpon>chances_taked_massive.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\1. Comercial\4. Chances\Taked\chances_taked_massive.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\1. Comercial\4. Chances\Taked\chances_taked_showed.Designer.vb">
+      <DependentUpon>chances_taked_showed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\1. Comercial\4. Chances\Taked\chances_taked_showed.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\1. Comercial\5. Budgets\relationship_budget_created.Designer.vb">
+      <DependentUpon>relationship_budget_created.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\1. Comercial\5. Budgets\relationship_budget_created.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\1. Comercial\5. Budgets\relationship_budget_edited.Designer.vb">
+      <DependentUpon>relationship_budget_edited.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\1. Comercial\5. Budgets\relationship_budget_edited.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\1. Comercial\5. Budgets\relationship_budget_showed.Designer.vb">
+      <DependentUpon>relationship_budget_showed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\1. Comercial\5. Budgets\relationship_budget_showed.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\1. Sales\wholesales_masters_capture.Designer.vb">
+      <DependentUpon>wholesales_masters_capture.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\1. Sales\wholesales_masters_capture.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\1. Sales\wholesales_masters_complete.Designer.vb">
+      <DependentUpon>wholesales_masters_complete.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\1. Sales\wholesales_masters_complete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\1. Sales\wholesales_masters_details.Designer.vb">
+      <DependentUpon>wholesales_masters_details.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\1. Sales\wholesales_masters_details.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\1. Sales\wholesales_masters_discount.Designer.vb">
+      <DependentUpon>wholesales_masters_discount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\1. Sales\wholesales_masters_discount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\1. Sales\wholesales_masters_imported.Designer.vb">
+      <DependentUpon>wholesales_masters_imported.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\1. Sales\wholesales_masters_imported.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\1. Sales\wholesales_masters_show.Designer.vb">
+      <DependentUpon>wholesales_masters_show.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\1. Sales\wholesales_masters_show.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\1. Sales\wholesales_masters_transfer.Designer.vb">
+      <DependentUpon>wholesales_masters_transfer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\1. Sales\wholesales_masters_transfer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\1. Sales\1. Movil\wholesales_movil_capture.Designer.vb">
+      <DependentUpon>wholesales_movil_capture.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\1. Sales\1. Movil\wholesales_movil_capture.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\1. Sales\1. Movil\wholesales_movil_create.Designer.vb">
+      <DependentUpon>wholesales_movil_create.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\1. Sales\1. Movil\wholesales_movil_create.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\1. Sales\1. Movil\wholesales_movil_edited.Designer.vb">
+      <DependentUpon>wholesales_movil_edited.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\1. Sales\1. Movil\wholesales_movil_edited.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\1. Sales\2. Hogar\wholesales_hogar_create.Designer.vb">
+      <DependentUpon>wholesales_hogar_create.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\1. Sales\2. Hogar\wholesales_hogar_create.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\1. Sales\2. Hogar\wholesales_hogar_edited.Designer.vb">
+      <DependentUpon>wholesales_hogar_edited.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\1. Sales\2. Hogar\wholesales_hogar_edited.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\1. Sales\3. Frees\wholesales_frees_create.Designer.vb">
+      <DependentUpon>wholesales_frees_create.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\1. Sales\3. Frees\wholesales_frees_create.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\1. Sales\3. Frees\wholesales_frees_edited.Designer.vb">
+      <DependentUpon>wholesales_frees_edited.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\1. Sales\3. Frees\wholesales_frees_edited.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\4. Guarantee\wholesales_guarantee_status.Designer.vb">
+      <DependentUpon>wholesales_guarantee_status.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\4. Guarantee\wholesales_guarantee_status.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\4. Guarantee\wholesales_guarantee_transfer.Designer.vb">
+      <DependentUpon>wholesales_guarantee_transfer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\4. Guarantee\wholesales_guarantee_transfer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\6. Imported\tools_imports_create.Designer.vb">
+      <DependentUpon>tools_imports_create.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\6. Imported\tools_imports_create.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\6. Imported\tools_imports_format.Designer.vb">
+      <DependentUpon>tools_imports_format.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\6. Imported\tools_imports_format.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\6. Imported\tools_imports_show.Designer.vb">
+      <DependentUpon>tools_imports_show.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\6. Imported\tools_imports_show.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\2. Datacredit\wholesales_datacredits_create.Designer.vb">
+      <DependentUpon>wholesales_datacredits_create.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\2. Datacredit\wholesales_datacredits_create.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\2. Datacredit\wholesales_datacredits_edited.Designer.vb">
+      <DependentUpon>wholesales_datacredits_edited.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\2. Datacredit\wholesales_datacredits_edited.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\2. Datacredit\wholesales_datacredits_show.Designer.vb">
+      <DependentUpon>wholesales_datacredits_show.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\2. Datacredit\wholesales_datacredits_show.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\3. Request\wholesales_request_create.Designer.vb">
+      <DependentUpon>wholesales_request_create.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\3. Request\wholesales_request_create.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\3. Request\wholesales_request_reject.Designer.vb">
+      <DependentUpon>wholesales_request_reject.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\3. Request\wholesales_request_reject.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\3. Request\wholesales_request_show.Designer.vb">
+      <DependentUpon>wholesales_request_show.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\3. Request\wholesales_request_show.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\4. Guarantee\wholesales_guarantee_closed.Designer.vb">
+      <DependentUpon>wholesales_guarantee_closed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\4. Guarantee\wholesales_guarantee_closed.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\4. Guarantee\wholesales_guarantee_create.Designer.vb">
+      <DependentUpon>wholesales_guarantee_create.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\4. Guarantee\wholesales_guarantee_create.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\4. Guarantee\wholesales_guarantee_details.Designer.vb">
+      <DependentUpon>wholesales_guarantee_details.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\4. Guarantee\wholesales_guarantee_details.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\4. Guarantee\wholesales_guarantee_dispach.Designer.vb">
+      <DependentUpon>wholesales_guarantee_dispach.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\4. Guarantee\wholesales_guarantee_dispach.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\4. Guarantee\wholesales_guarantee_format.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>wholesales_guarantee_format.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\4. Guarantee\wholesales_guarantee_proof.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>wholesales_guarantee_proof.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\4. Guarantee\wholesales_guarantee_search.Designer.vb">
+      <DependentUpon>wholesales_guarantee_search.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\4. Guarantee\wholesales_guarantee_search.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\4. Guarantee\wholesales_guarantee_show.Designer.vb">
+      <DependentUpon>wholesales_guarantee_show.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\4. Guarantee\wholesales_guarantee_show.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\4. Guarantee\wholesales_guarantee_support.Designer.vb">
+      <DependentUpon>wholesales_guarantee_support.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\4. Guarantee\wholesales_guarantee_support.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\4. Guarantee\wholesales_guarantee_viewer.Designer.vb">
+      <DependentUpon>wholesales_guarantee_viewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\4. Guarantee\wholesales_guarantee_viewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\5. Collections\wholesales_collections_create.Designer.vb">
+      <DependentUpon>wholesales_collections_create.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\5. Collections\wholesales_collections_create.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\5. Collections\wholesales_collections_edited.Designer.vb">
+      <DependentUpon>wholesales_collections_edited.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\5. Collections\wholesales_collections_edited.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\5. Collections\wholesales_collections_search.Designer.vb">
+      <DependentUpon>wholesales_collections_search.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\5. Collections\wholesales_collections_search.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\5. Collections\wholesales_collections_show.Designer.vb">
+      <DependentUpon>wholesales_collections_show.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\5. Collections\wholesales_collections_show.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\7. Orders\wholesales_orders_closed.Designer.vb">
+      <DependentUpon>wholesales_orders_closed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\7. Orders\wholesales_orders_closed.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\7. Orders\wholesales_orders_created.Designer.vb">
+      <DependentUpon>wholesales_orders_created.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\7. Orders\wholesales_orders_created.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\7. Orders\wholesales_orders_dispach.Designer.vb">
+      <DependentUpon>wholesales_orders_dispach.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\7. Orders\wholesales_orders_dispach.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\7. Orders\wholesales_orders_edited.Designer.vb">
+      <DependentUpon>wholesales_orders_edited.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\7. Orders\wholesales_orders_edited.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\7. Orders\wholesales_orders_products.Designer.vb">
+      <DependentUpon>wholesales_orders_products.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\7. Orders\wholesales_orders_products.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\7. Orders\wholesales_orders_showed.Designer.vb">
+      <DependentUpon>wholesales_orders_showed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\7. Orders\wholesales_orders_showed.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\7. Orders\wholesales_orders_status.Designer.vb">
+      <DependentUpon>wholesales_orders_status.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\7. Orders\wholesales_orders_status.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\7. Orders\wholesales_orders_viewers.Designer.vb">
+      <DependentUpon>wholesales_orders_viewers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\7. Orders\wholesales_orders_viewers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\7. Orders\wholesales_orders_transfer.Designer.vb">
+      <DependentUpon>wholesales_orders_transfer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\7. Orders\wholesales_orders_transfer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\8. Deliverys\wholesales_deliverys_closed.Designer.vb">
+      <DependentUpon>wholesales_deliverys_closed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\8. Deliverys\wholesales_deliverys_closed.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\8. Deliverys\wholesales_deliverys_create.Designer.vb">
+      <DependentUpon>wholesales_deliverys_create.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\8. Deliverys\wholesales_deliverys_create.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\8. Deliverys\wholesales_deliverys_document.Designer.vb">
+      <DependentUpon>wholesales_deliverys_document.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\8. Deliverys\wholesales_deliverys_document.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\8. Deliverys\wholesales_deliverys_edited.Designer.vb">
+      <DependentUpon>wholesales_deliverys_edited.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\8. Deliverys\wholesales_deliverys_edited.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\8. Deliverys\wholesales_deliverys_products.Designer.vb">
+      <DependentUpon>wholesales_deliverys_products.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\8. Deliverys\wholesales_deliverys_products.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\8. Deliverys\wholesales_deliverys_showed.Designer.vb">
+      <DependentUpon>wholesales_deliverys_showed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\8. Deliverys\wholesales_deliverys_showed.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\8. Deliverys\wholesales_deliverys_status.Designer.vb">
+      <DependentUpon>wholesales_deliverys_status.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\8. Deliverys\wholesales_deliverys_status.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\8. Deliverys\wholesales_deliverys_transfer.Designer.vb">
+      <DependentUpon>wholesales_deliverys_transfer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\2. Wholesales\8. Deliverys\wholesales_deliverys_transfer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\3. Commision\0. Rules\commision_rules_create.Designer.vb">
+      <DependentUpon>commision_rules_create.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\3. Commision\0. Rules\commision_rules_create.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\3. Commision\0. Rules\commision_rules_edited.Designer.vb">
+      <DependentUpon>commision_rules_edited.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\3. Commision\0. Rules\commision_rules_edited.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\3. Commision\0. Rules\commision_rules_show.Designer.vb">
+      <DependentUpon>commision_rules_show.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\3. Commision\0. Rules\commision_rules_show.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\3. Commision\0. Rules\commision_rules_view.Designer.vb">
+      <DependentUpon>commision_rules_view.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\3. Commision\0. Rules\commision_rules_view.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\3. Commision\1. Schema\a. Schemas\commision_schema_create.Designer.vb">
+      <DependentUpon>commision_schema_create.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\3. Commision\1. Schema\a. Schemas\commision_schema_create.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\3. Commision\1. Schema\a. Schemas\commision_schema_edited.Designer.vb">
+      <DependentUpon>commision_schema_edited.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\3. Commision\1. Schema\a. Schemas\commision_schema_edited.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\3. Commision\1. Schema\a. Schemas\commision_schema_show.Designer.vb">
+      <DependentUpon>commision_schema_show.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\3. Commision\1. Schema\a. Schemas\commision_schema_show.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\3. Commision\1. Schema\b. Tables\commision_tables_create.Designer.vb">
+      <DependentUpon>commision_tables_create.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\3. Commision\1. Schema\b. Tables\commision_tables_create.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\3. Commision\1. Schema\b. Tables\commision_tables_edited.Designer.vb">
+      <DependentUpon>commision_tables_edited.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\3. Commision\1. Schema\b. Tables\commision_tables_edited.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\3. Commision\1. Schema\b. Tables\commision_tables_showed.Designer.vb">
+      <DependentUpon>commision_tables_showed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\3. Commision\1. Schema\b. Tables\commision_tables_showed.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\3. Commision\2. Conditions\commision_conditions_create.Designer.vb">
+      <DependentUpon>commision_conditions_create.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\3. Commision\2. Conditions\commision_conditions_create.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\3. Commision\2. Conditions\commision_conditions_edited.Designer.vb">
+      <DependentUpon>commision_conditions_edited.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\3. Commision\2. Conditions\commision_conditions_edited.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\3. Commision\2. Conditions\commision_conditions_show.Designer.vb">
+      <DependentUpon>commision_conditions_show.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\3. Commision\2. Conditions\commision_conditions_show.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\3. Commision\3. Counts\conditions_counts_create.Designer.vb">
+      <DependentUpon>conditions_counts_create.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\3. Commision\3. Counts\conditions_counts_create.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\3. Commision\3. Counts\conditions_counts_show.Designer.vb">
+      <DependentUpon>conditions_counts_show.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\3. Commision\3. Counts\conditions_counts_show.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\3. Commision\4. Scales\conditions_scales_create.Designer.vb">
+      <DependentUpon>conditions_scales_create.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\3. Commision\4. Scales\conditions_scales_create.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\3. Commision\4. Scales\conditions_scales_edited.Designer.vb">
+      <DependentUpon>conditions_scales_edited.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\3. Commision\4. Scales\conditions_scales_edited.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\3. Commision\4. Scales\conditions_scales_show.Designer.vb">
+      <DependentUpon>conditions_scales_show.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\3. Commision\4. Scales\conditions_scales_show.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\3. Commision\5. Values\commision_values_create.Designer.vb">
+      <DependentUpon>commision_values_create.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\3. Commision\5. Values\commision_values_create.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\3. Commision\5. Values\commision_values_edited.Designer.vb">
+      <DependentUpon>commision_values_edited.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\3. Commision\5. Values\commision_values_edited.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\3. Commision\5. Values\commision_values_show.Designer.vb">
+      <DependentUpon>commision_values_show.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\3. Commision\5. Values\commision_values_show.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\3. Commision\6. Settleds\commision_settleds_create.Designer.vb">
+      <DependentUpon>commision_settleds_create.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\3. Commision\6. Settleds\commision_settleds_create.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\3. Commision\6. Settleds\commision_settleds_edited.Designer.vb">
+      <DependentUpon>commision_settleds_edited.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\3. Commision\6. Settleds\commision_settleds_edited.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\3. Commision\6. Settleds\commision_settleds_excludes.Designer.vb">
+      <DependentUpon>commision_settleds_excludes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\3. Commision\6. Settleds\commision_settleds_excludes.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\3. Commision\6. Settleds\commision_settleds_manual.Designer.vb">
+      <DependentUpon>commision_settleds_manual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\3. Commision\6. Settleds\commision_settleds_manual.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\3. Commision\6. Settleds\commision_settleds_search.Designer.vb">
+      <DependentUpon>commision_settleds_search.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\3. Commision\6. Settleds\commision_settleds_search.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\3. Commision\6. Settleds\commision_settleds_slopes.Designer.vb">
+      <DependentUpon>commision_settleds_slopes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\3. Commision\6. Settleds\commision_settleds_slopes.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\3. Commision\6. Settleds\Subsettleds\commision_subsettleds_create.Designer.vb">
+      <DependentUpon>commision_subsettleds_create.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\3. Commision\6. Settleds\Subsettleds\commision_subsettleds_create.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\3. Commision\7. Periods\commision_periods_create.Designer.vb">
+      <DependentUpon>commision_periods_create.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\3. Commision\7. Periods\commision_periods_create.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\3. Commision\7. Periods\commision_periods_edited.Designer.vb">
+      <DependentUpon>commision_periods_edited.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\3. Commision\7. Periods\commision_periods_edited.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\3. Commision\7. Periods\commision_periods_search.Designer.vb">
+      <DependentUpon>commision_periods_search.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\3. Commision\7. Periods\commision_periods_search.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\3. Commision\7. Periods\commision_periods_show.Designer.vb">
+      <DependentUpon>commision_periods_show.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\3. Commision\7. Periods\commision_periods_show.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\3. Commision\8. Searchs\commision_searched_discount.Designer.vb">
+      <DependentUpon>commision_searched_discount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\3. Commision\8. Searchs\commision_searched_discount.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\3. Commision\8. Searchs\commision_searched_show.Designer.vb">
+      <DependentUpon>commision_searched_show.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\3. Commision\8. Searchs\commision_searched_show.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Model\6. Database\BIM.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BIM.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UI\3. Commision\6. Settleds\Subsettleds\commision_subsettleds_search.Designer.vb">
+      <DependentUpon>commision_subsettleds_search.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\3. Commision\6. Settleds\Subsettleds\commision_subsettleds_search.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\3. Commision\9. Proofs\commision_proofs_reported.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>commision_proofs_reported.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\3. Commision\9. Proofs\commision_proofs_showed.Designer.vb">
+      <DependentUpon>commision_proofs_showed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\3. Commision\9. Proofs\commision_proofs_showed.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\3. Commision\9. Proofs\commision_proofs_subsettled.Designer.vb">
+      <DependentUpon>commision_proofs_subsettled.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\3. Commision\9. Proofs\commision_proofs_subsettled.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\3. Commision\9. Proofs\commision_proofs_viewer.Designer.vb">
+      <DependentUpon>commision_proofs_viewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\3. Commision\9. Proofs\commision_proofs_viewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\4. Tasked\1. Masters\tasks_masters_closed.Designer.vb">
+      <DependentUpon>tasks_masters_closed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\4. Tasked\1. Masters\tasks_masters_closed.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\4. Tasked\1. Masters\tasks_masters_created.Designer.vb">
+      <DependentUpon>tasks_masters_created.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\4. Tasked\1. Masters\tasks_masters_created.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\4. Tasked\1. Masters\tasks_masters_search.Designer.vb">
+      <DependentUpon>tasks_masters_search.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\4. Tasked\1. Masters\tasks_masters_search.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\4. Tasked\1. Masters\tasks_masters_showed.Designer.vb">
+      <DependentUpon>tasks_masters_showed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\4. Tasked\1. Masters\tasks_masters_showed.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\4. Tasked\1. Masters\tasks_masters_transfer.Designer.vb">
+      <DependentUpon>tasks_masters_transfer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\4. Tasked\1. Masters\tasks_masters_transfer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\4. Tasked\2. Category\tasks_category_create.Designer.vb">
+      <DependentUpon>tasks_category_create.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\4. Tasked\2. Category\tasks_category_create.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\4. Tasked\2. Category\tasks_category_edited.Designer.vb">
+      <DependentUpon>tasks_category_edited.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\4. Tasked\2. Category\tasks_category_edited.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\4. Tasked\2. Category\tasks_category_showed.Designer.vb">
+      <DependentUpon>tasks_category_showed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\4. Tasked\2. Category\tasks_category_showed.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\4. Tasked\3. Items\tasks_items_create.Designer.vb">
+      <DependentUpon>tasks_items_create.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\4. Tasked\3. Items\tasks_items_create.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\4. Tasked\3. Items\tasks_items_edited.Designer.vb">
+      <DependentUpon>tasks_items_edited.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\4. Tasked\3. Items\tasks_items_edited.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\4. Tasked\3. Items\tasks_items_showed.Designer.vb">
+      <DependentUpon>tasks_items_showed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\4. Tasked\3. Items\tasks_items_showed.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\5. Reporting\0. Dashboard\reporting_dashboard_leaders.Designer.vb">
+      <DependentUpon>reporting_dashboard_leaders.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\5. Reporting\0. Dashboard\reporting_dashboard_leaders.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\5. Reporting\0. Dashboard\reporting_dashboard_personal.Designer.vb">
+      <DependentUpon>reporting_dashboard_personal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\5. Reporting\0. Dashboard\reporting_dashboard_personal.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\5. Reporting\0. Dashboard\reporting_dashboard_showed.Designer.vb">
+      <DependentUpon>reporting_dashboard_showed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\5. Reporting\0. Dashboard\reporting_dashboard_showed.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\5. Reporting\1. Wholesales\reports_wholesales_category.Designer.vb">
+      <DependentUpon>reports_wholesales_category.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\5. Reporting\1. Wholesales\reports_wholesales_category.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\5. Reporting\1. Wholesales\reports_wholesales_consolidate.Designer.vb">
+      <DependentUpon>reports_wholesales_consolidate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\5. Reporting\1. Wholesales\reports_wholesales_consolidate.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\5. Reporting\1. Wholesales\reports_wholesales_dealer.Designer.vb">
+      <DependentUpon>reports_wholesales_dealer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\5. Reporting\1. Wholesales\reports_wholesales_dealer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\5. Reporting\1. Wholesales\reports_wholesales_deliverys.Designer.vb">
+      <DependentUpon>reports_wholesales_deliverys.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\5. Reporting\1. Wholesales\reports_wholesales_deliverys.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\5. Reporting\1. Wholesales\reports_wholesales_margined.Designer.vb">
+      <DependentUpon>reports_wholesales_margined.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\5. Reporting\1. Wholesales\reports_wholesales_margined.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\5. Reporting\1. Wholesales\reports_wholesales_orders.Designer.vb">
+      <DependentUpon>reports_wholesales_orders.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\5. Reporting\1. Wholesales\reports_wholesales_orders.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\5. Reporting\1. Wholesales\reports_wholesales_product.Designer.vb">
+      <DependentUpon>reports_wholesales_product.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\5. Reporting\1. Wholesales\reports_wholesales_product.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\5. Reporting\1. Wholesales\reports_wholesales_resumen.Designer.vb">
+      <DependentUpon>reports_wholesales_resumen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\5. Reporting\1. Wholesales\reports_wholesales_resumen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\5. Reporting\1. Wholesales\reports_wholesales_segment.Designer.vb">
+      <DependentUpon>reports_wholesales_segment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\5. Reporting\1. Wholesales\reports_wholesales_segment.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\5. Reporting\2. Datacredits\reports_datacredits_resumen.Designer.vb">
+      <DependentUpon>reports_datacredits_resumen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\5. Reporting\2. Datacredits\reports_datacredits_resumen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\5. Reporting\3. Collections\reports_collections_resumen.Designer.vb">
+      <DependentUpon>reports_collections_resumen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\5. Reporting\3. Collections\reports_collections_resumen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\5. Reporting\4. Guarantees\reports_guarantees_resumen.Designer.vb">
+      <DependentUpon>reports_guarantees_resumen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\5. Reporting\4. Guarantees\reports_guarantees_resumen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\5. Reporting\5. Attentions\reports_attentions_resumen.Designer.vb">
+      <DependentUpon>reports_attentions_resumen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\5. Reporting\5. Attentions\reports_attentions_resumen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\5. Reporting\6. Siesa\reports_siesa_facturate.Designer.vb">
+      <DependentUpon>reports_siesa_facturate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\5. Reporting\6. Siesa\reports_siesa_facturate.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\5. Reporting\6. Siesa\reports_siesa_inventory.Designer.vb">
+      <DependentUpon>reports_siesa_inventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\5. Reporting\6. Siesa\reports_siesa_inventory.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\5. Reporting\6. Siesa\reports_siesa_seriales.Designer.vb">
+      <DependentUpon>reports_siesa_seriales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\5. Reporting\6. Siesa\reports_siesa_seriales.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\5. Reporting\7. Payments\reports_payments_resumen.Designer.vb">
+      <DependentUpon>reports_payments_resumen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\5. Reporting\7. Payments\reports_payments_resumen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\5. Reporting\8. Comission\reporting_comission_resumen.Designer.vb">
+      <DependentUpon>reporting_comission_resumen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\5. Reporting\8. Comission\reporting_comission_resumen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\6. Settings\0. Permits\settings_permission_created.Designer.vb">
+      <DependentUpon>settings_permission_created.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\6. Settings\0. Permits\settings_permission_created.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\6. Settings\0. Permits\settings_permission_show.Designer.vb">
+      <DependentUpon>settings_permission_show.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\6. Settings\0. Permits\settings_permission_show.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\6. Settings\3. Agencys\settings_agencys_created.Designer.vb">
+      <DependentUpon>settings_agencys_created.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\6. Settings\3. Agencys\settings_agencys_created.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\6. Settings\3. Agencys\settings_agencys_edited.Designer.vb">
+      <DependentUpon>settings_agencys_edited.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\6. Settings\3. Agencys\settings_agencys_edited.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\6. Settings\6. Workforce\b. Helpers\persons_password_create.Designer.vb">
+      <DependentUpon>persons_password_create.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\6. Settings\6. Workforce\b. Helpers\persons_password_create.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\6. Settings\6. Workforce\c. Budgets\settings_budgets_create.Designer.vb">
+      <DependentUpon>settings_budgets_create.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\6. Settings\6. Workforce\c. Budgets\settings_budgets_create.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\6. Settings\6. Workforce\c. Budgets\settings_budgets_edited.Designer.vb">
+      <DependentUpon>settings_budgets_edited.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\6. Settings\6. Workforce\c. Budgets\settings_budgets_edited.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\6. Settings\8. Services\1. Brand\services_brands_create.Designer.vb">
+      <DependentUpon>services_brands_create.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\6. Settings\8. Services\1. Brand\services_brands_create.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\6. Settings\8. Services\1. Brand\services_brands_edited.Designer.vb">
+      <DependentUpon>services_brands_edited.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\6. Settings\8. Services\1. Brand\services_brands_edited.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\6. Settings\8. Services\1. Brand\services_brands_show.Designer.vb">
+      <DependentUpon>services_brands_show.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\6. Settings\8. Services\1. Brand\services_brands_show.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\6. Settings\8. Services\2. Categorys\services_categorys_create.Designer.vb">
+      <DependentUpon>services_categorys_create.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\6. Settings\8. Services\2. Categorys\services_categorys_create.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\6. Settings\8. Services\2. Categorys\services_categorys_edited.Designer.vb">
+      <DependentUpon>services_categorys_edited.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\6. Settings\8. Services\2. Categorys\services_categorys_edited.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\6. Settings\8. Services\2. Categorys\services_categorys_show.Designer.vb">
+      <DependentUpon>services_categorys_show.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\6. Settings\8. Services\2. Categorys\services_categorys_show.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\6. Settings\8. Services\3. Products\services_products_create.Designer.vb">
+      <DependentUpon>services_products_create.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\6. Settings\8. Services\3. Products\services_products_create.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\6. Settings\8. Services\3. Products\services_products_edited.Designer.vb">
+      <DependentUpon>services_products_edited.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\6. Settings\8. Services\3. Products\services_products_edited.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\6. Settings\8. Services\3. Products\services_products_objects.Designer.vb">
+      <DependentUpon>services_products_objects.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\6. Settings\8. Services\3. Products\services_products_objects.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\6. Settings\8. Services\3. Products\services_products_properties.Designer.vb">
+      <DependentUpon>services_products_properties.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\6. Settings\8. Services\3. Products\services_products_properties.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\6. Settings\8. Services\3. Products\services_products_show.Designer.vb">
+      <DependentUpon>services_products_show.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\6. Settings\8. Services\3. Products\services_products_show.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\6. Settings\1. Operators\settings_operators_create.Designer.vb">
+      <DependentUpon>settings_operators_create.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\6. Settings\1. Operators\settings_operators_create.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\6. Settings\1. Operators\settings_operators_edited.Designer.vb">
+      <DependentUpon>settings_operators_edited.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\6. Settings\1. Operators\settings_operators_edited.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\6. Settings\1. Operators\settings_operators_show.Designer.vb">
+      <DependentUpon>settings_operators_show.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\6. Settings\1. Operators\settings_operators_show.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\6. Settings\2. Positions\settings_positions_create.Designer.vb">
+      <DependentUpon>settings_positions_create.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\6. Settings\2. Positions\settings_positions_create.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\6. Settings\2. Positions\settings_positions_edited.Designer.vb">
+      <DependentUpon>settings_positions_edited.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\6. Settings\2. Positions\settings_positions_edited.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\6. Settings\2. Positions\settings_positions_show.Designer.vb">
+      <DependentUpon>settings_positions_show.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\6. Settings\2. Positions\settings_positions_show.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\6. Settings\3. Agencys\settings_agencys_show.Designer.vb">
+      <DependentUpon>settings_agencys_show.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\6. Settings\3. Agencys\settings_agencys_show.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\6. Settings\4. Channels\settings_channels_create.Designer.vb">
+      <DependentUpon>settings_channels_create.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\6. Settings\4. Channels\settings_channels_create.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\6. Settings\4. Channels\settings_channels_edited.Designer.vb">
+      <DependentUpon>settings_channels_edited.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\6. Settings\4. Channels\settings_channels_edited.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\6. Settings\4. Channels\settings_channels_show.Designer.vb">
+      <DependentUpon>settings_channels_show.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\6. Settings\4. Channels\settings_channels_show.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\6. Settings\5. Dealers\Asigned\dealers_assign_create.Designer.vb">
+      <DependentUpon>dealers_assign_create.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\6. Settings\5. Dealers\Asigned\dealers_assign_create.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\6. Settings\5. Dealers\Asigned\dealers_assign_show.Designer.vb">
+      <DependentUpon>dealers_assign_show.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\6. Settings\5. Dealers\Asigned\dealers_assign_show.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\6. Settings\5. Dealers\settings_dealers_create.Designer.vb">
+      <DependentUpon>settings_dealers_create.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\6. Settings\5. Dealers\settings_dealers_create.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\6. Settings\5. Dealers\settings_dealers_edited.Designer.vb">
+      <DependentUpon>settings_dealers_edited.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\6. Settings\5. Dealers\settings_dealers_edited.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\6. Settings\5. Dealers\settings_dealers_show.Designer.vb">
+      <DependentUpon>settings_dealers_show.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\6. Settings\5. Dealers\settings_dealers_show.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\6. Settings\6. Workforce\a. Persons\settings_persons_create.Designer.vb">
+      <DependentUpon>settings_persons_create.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\6. Settings\6. Workforce\a. Persons\settings_persons_create.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\6. Settings\6. Workforce\a. Persons\settings_persons_edited.Designer.vb">
+      <DependentUpon>settings_persons_edited.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\6. Settings\6. Workforce\a. Persons\settings_persons_edited.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\6. Settings\6. Workforce\a. Persons\settings_persons_resume.Designer.vb">
+      <DependentUpon>settings_persons_resume.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\6. Settings\6. Workforce\a. Persons\settings_persons_resume.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\6. Settings\6. Workforce\a. Persons\settings_persons_show.Designer.vb">
+      <DependentUpon>settings_persons_show.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\6. Settings\6. Workforce\a. Persons\settings_persons_show.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\6. Settings\6. Workforce\b. Helpers\persons_agencys_create.Designer.vb">
+      <DependentUpon>persons_agencys_create.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\6. Settings\6. Workforce\b. Helpers\persons_agencys_create.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\6. Settings\6. Workforce\b. Helpers\persons_channels_create.Designer.vb">
+      <DependentUpon>persons_channels_create.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\6. Settings\6. Workforce\b. Helpers\persons_channels_create.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\6. Settings\6. Workforce\b. Helpers\persons_directors_create.Designer.vb">
+      <DependentUpon>persons_directors_create.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\6. Settings\6. Workforce\b. Helpers\persons_directors_create.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\6. Settings\6. Workforce\b. Helpers\persons_leaders_create.Designer.vb">
+      <DependentUpon>persons_leaders_create.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\6. Settings\6. Workforce\b. Helpers\persons_leaders_create.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\6. Settings\6. Workforce\b. Helpers\persons_permits_create.Designer.vb">
+      <DependentUpon>persons_permits_create.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\6. Settings\6. Workforce\b. Helpers\persons_permits_create.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\6. Settings\6. Workforce\b. Helpers\persons_users_create.Designer.vb">
+      <DependentUpon>persons_users_create.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\6. Settings\6. Workforce\b. Helpers\persons_users_create.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\6. Settings\7. Directors\settings_directors_create.Designer.vb">
+      <DependentUpon>settings_directors_create.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\6. Settings\7. Directors\settings_directors_create.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\6. Settings\7. Directors\settings_directors_edited.Designer.vb">
+      <DependentUpon>settings_directors_edited.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\6. Settings\7. Directors\settings_directors_edited.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\6. Settings\7. Directors\settings_directors_show.Designer.vb">
+      <DependentUpon>settings_directors_show.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\6. Settings\7. Directors\settings_directors_show.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\6. Settings\8. Services\4. Providers\services_providers_created.Designer.vb">
+      <DependentUpon>services_providers_created.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\6. Settings\8. Services\4. Providers\services_providers_created.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\6. Settings\8. Services\4. Providers\services_providers_edited.Designer.vb">
+      <DependentUpon>services_providers_edited.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\6. Settings\8. Services\4. Providers\services_providers_edited.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\6. Settings\8. Services\4. Providers\services_providers_show.Designer.vb">
+      <DependentUpon>services_providers_show.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\6. Settings\8. Services\4. Providers\services_providers_show.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\6. Settings\9. Audited\settings_audited_searched.Designer.vb">
+      <DependentUpon>settings_audited_searched.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\6. Settings\9. Audited\settings_audited_searched.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\6. Settings\9. Audited\settings_audited_showed.Designer.vb">
+      <DependentUpon>settings_audited_showed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\6. Settings\9. Audited\settings_audited_showed.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\6. Settings\9. Causals\settings_causals_create.Designer.vb">
+      <DependentUpon>settings_causals_create.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\6. Settings\9. Causals\settings_causals_create.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\6. Settings\9. Causals\settings_causals_edited.Designer.vb">
+      <DependentUpon>settings_causals_edited.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\6. Settings\9. Causals\settings_causals_edited.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\6. Settings\9. Causals\settings_causals_show.Designer.vb">
+      <DependentUpon>settings_causals_show.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\6. Settings\9. Causals\settings_causals_show.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Model\0. Helpers\model_object_cards.resx">
+      <DependentUpon>model_object_cards.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\0. Helpers\model_object_comments.resx">
+      <DependentUpon>model_object_comments.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\0. Helpers\model_object_export.resx">
+      <DependentUpon>model_object_export.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\0. Helpers\model_object_notes.resx">
+      <DependentUpon>model_object_notes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\0. Helpers\model_object_notify.resx">
+      <DependentUpon>model_object_notify.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\0. Helpers\model_object_tracing.resx">
+      <DependentUpon>model_object_tracing.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\0. Initial\start_initial_home.resx">
+      <DependentUpon>start_initial_home.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\0. Initial\start_initial_login.resx">
+      <DependentUpon>start_initial_login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\0. Initial\start_initial_logined.resx">
+      <DependentUpon>start_initial_logined.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\0. Initial\start_initial_restore.resx">
+      <DependentUpon>start_initial_restore.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\0. Initial\start_initial_update.resx">
+      <DependentUpon>start_initial_update.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\1. Comercial\1. Customers\comercial_customer_address.resx">
+      <DependentUpon>comercial_customer_address.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\1. Comercial\1. Customers\comercial_customer_cluster.resx">
+      <DependentUpon>comercial_customer_cluster.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\1. Comercial\1. Customers\comercial_customer_create.resx">
+      <DependentUpon>comercial_customer_create.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\1. Comercial\1. Customers\comercial_customer_edited.resx">
+      <DependentUpon>comercial_customer_edited.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\1. Comercial\1. Customers\comercial_customer_hobbies.resx">
+      <DependentUpon>comercial_customer_hobbies.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\1. Comercial\1. Customers\comercial_customer_products.resx">
+      <DependentUpon>comercial_customer_products.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\1. Comercial\1. Customers\comercial_customer_resume.resx">
+      <DependentUpon>comercial_customer_resume.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\1. Comercial\1. Customers\comercial_customer_searched.resx">
+      <DependentUpon>comercial_customer_searched.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\1. Comercial\1. Customers\comercial_customer_show.resx">
+      <DependentUpon>comercial_customer_show.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\1. Comercial\1. Customers\comercial_customer_transfer.resx">
+      <DependentUpon>comercial_customer_transfer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\1. Comercial\1. Customers\comercial_customer_refered.resx">
+      <DependentUpon>comercial_customer_refered.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\1. Comercial\1. Customers\XtraForm1.resx">
+      <DependentUpon>XtraForm1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\1. Comercial\2. Attentions\comercial_attention_closed.resx">
+      <DependentUpon>comercial_attention_closed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\1. Comercial\2. Attentions\comercial_attention_create.resx">
+      <DependentUpon>comercial_attention_create.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\1. Comercial\2. Attentions\comercial_attention_resumen.resx">
+      <DependentUpon>comercial_attention_resumen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\1. Comercial\2. Attentions\Quotation\attention_quotation_create.resx">
+      <DependentUpon>attention_quotation_create.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\1. Comercial\2. Attentions\comercial_attention_show.resx">
+      <DependentUpon>comercial_attention_show.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\1. Comercial\2. Attentions\comercial_attention_transfer.resx">
+      <DependentUpon>comercial_attention_transfer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\1. Comercial\2. Attentions\Quotation\attention_quotation_edited.resx">
+      <DependentUpon>attention_quotation_edited.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\1. Comercial\2. Attentions\Quotation\attention_quotation_masive.resx">
+      <DependentUpon>attention_quotation_masive.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\1. Comercial\2. Attentions\Quotation\attention_quotation_proofs.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>attention_quotation_proofs.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\1. Comercial\2. Attentions\Quotation\attention_quotation_show.resx">
+      <DependentUpon>attention_quotation_show.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\1. Comercial\2. Attentions\Quotation\attention_quotation_viewers.resx">
+      <DependentUpon>attention_quotation_viewers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\1. Comercial\2. Attentions\Quotation\attention_quotation_wholesales.resx">
+      <DependentUpon>attention_quotation_wholesales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\1. Comercial\3. Groups\comercial_groups_cluster.resx">
+      <DependentUpon>comercial_groups_cluster.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\1. Comercial\3. Groups\comercial_groups_create.resx">
+      <DependentUpon>comercial_groups_create.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\1. Comercial\3. Groups\comercial_groups_edited.resx">
+      <DependentUpon>comercial_groups_edited.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\1. Comercial\3. Groups\comercial_groups_show.resx">
+      <DependentUpon>comercial_groups_show.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\1. Comercial\4. Chances\comercial_chances_create.resx">
+      <DependentUpon>comercial_chances_create.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\1. Comercial\4. Chances\comercial_chances_edited.resx">
+      <DependentUpon>comercial_chances_edited.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\1. Comercial\4. Chances\comercial_chances_show.resx">
+      <DependentUpon>comercial_chances_show.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\1. Comercial\4. Chances\comercial_chances_lookup.resx">
+      <DependentUpon>comercial_chances_lookup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\1. Comercial\4. Chances\comercial_chances_viewer.resx">
+      <DependentUpon>comercial_chances_viewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\1. Comercial\4. Chances\Taked\chances_taked_create.resx">
+      <DependentUpon>chances_taked_create.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\1. Comercial\4. Chances\Taked\chances_taked_massive.resx">
+      <DependentUpon>chances_taked_massive.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\1. Comercial\4. Chances\Taked\chances_taked_showed.resx">
+      <DependentUpon>chances_taked_showed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\1. Comercial\5. Budgets\relationship_budget_created.resx">
+      <DependentUpon>relationship_budget_created.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\1. Comercial\5. Budgets\relationship_budget_edited.resx">
+      <DependentUpon>relationship_budget_edited.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\1. Comercial\5. Budgets\relationship_budget_showed.resx">
+      <DependentUpon>relationship_budget_showed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\2. Wholesales\1. Sales\wholesales_masters_capture.resx">
+      <DependentUpon>wholesales_masters_capture.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\2. Wholesales\1. Sales\wholesales_masters_complete.resx">
+      <DependentUpon>wholesales_masters_complete.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\2. Wholesales\1. Sales\wholesales_masters_details.resx">
+      <DependentUpon>wholesales_masters_details.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\2. Wholesales\1. Sales\wholesales_masters_discount.resx">
+      <DependentUpon>wholesales_masters_discount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\2. Wholesales\1. Sales\wholesales_masters_imported.resx">
+      <DependentUpon>wholesales_masters_imported.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\2. Wholesales\1. Sales\wholesales_masters_show.resx">
+      <DependentUpon>wholesales_masters_show.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\2. Wholesales\1. Sales\wholesales_masters_transfer.resx">
+      <DependentUpon>wholesales_masters_transfer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\2. Wholesales\1. Sales\1. Movil\wholesales_movil_capture.resx">
+      <DependentUpon>wholesales_movil_capture.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\2. Wholesales\1. Sales\1. Movil\wholesales_movil_create.resx">
+      <DependentUpon>wholesales_movil_create.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\2. Wholesales\1. Sales\1. Movil\wholesales_movil_edited.resx">
+      <DependentUpon>wholesales_movil_edited.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\2. Wholesales\1. Sales\2. Hogar\wholesales_hogar_create.resx">
+      <DependentUpon>wholesales_hogar_create.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\2. Wholesales\1. Sales\2. Hogar\wholesales_hogar_edited.resx">
+      <DependentUpon>wholesales_hogar_edited.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\2. Wholesales\1. Sales\3. Frees\wholesales_frees_create.resx">
+      <DependentUpon>wholesales_frees_create.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\2. Wholesales\1. Sales\3. Frees\wholesales_frees_edited.resx">
+      <DependentUpon>wholesales_frees_edited.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\2. Wholesales\4. Guarantee\wholesales_guarantee_status.resx">
+      <DependentUpon>wholesales_guarantee_status.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\2. Wholesales\4. Guarantee\wholesales_guarantee_transfer.resx">
+      <DependentUpon>wholesales_guarantee_transfer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\2. Wholesales\6. Imported\tools_imports_create.resx">
+      <DependentUpon>tools_imports_create.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\2. Wholesales\6. Imported\tools_imports_format.resx">
+      <DependentUpon>tools_imports_format.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\2. Wholesales\6. Imported\tools_imports_show.resx">
+      <DependentUpon>tools_imports_show.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\2. Wholesales\2. Datacredit\wholesales_datacredits_create.resx">
+      <DependentUpon>wholesales_datacredits_create.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\2. Wholesales\2. Datacredit\wholesales_datacredits_edited.resx">
+      <DependentUpon>wholesales_datacredits_edited.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\2. Wholesales\2. Datacredit\wholesales_datacredits_show.resx">
+      <DependentUpon>wholesales_datacredits_show.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\2. Wholesales\3. Request\wholesales_request_create.resx">
+      <DependentUpon>wholesales_request_create.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\2. Wholesales\3. Request\wholesales_request_reject.resx">
+      <DependentUpon>wholesales_request_reject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\2. Wholesales\3. Request\wholesales_request_show.resx">
+      <DependentUpon>wholesales_request_show.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\2. Wholesales\4. Guarantee\wholesales_guarantee_closed.resx">
+      <DependentUpon>wholesales_guarantee_closed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\2. Wholesales\4. Guarantee\wholesales_guarantee_create.resx">
+      <DependentUpon>wholesales_guarantee_create.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\2. Wholesales\4. Guarantee\wholesales_guarantee_details.resx">
+      <DependentUpon>wholesales_guarantee_details.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\2. Wholesales\4. Guarantee\wholesales_guarantee_dispach.resx">
+      <DependentUpon>wholesales_guarantee_dispach.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\2. Wholesales\4. Guarantee\wholesales_guarantee_format.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>wholesales_guarantee_format.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\2. Wholesales\4. Guarantee\wholesales_guarantee_proof.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>wholesales_guarantee_proof.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\2. Wholesales\4. Guarantee\wholesales_guarantee_search.resx">
+      <DependentUpon>wholesales_guarantee_search.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\2. Wholesales\4. Guarantee\wholesales_guarantee_show.resx">
+      <DependentUpon>wholesales_guarantee_show.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\2. Wholesales\4. Guarantee\wholesales_guarantee_support.resx">
+      <DependentUpon>wholesales_guarantee_support.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\2. Wholesales\4. Guarantee\wholesales_guarantee_viewer.resx">
+      <DependentUpon>wholesales_guarantee_viewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\2. Wholesales\5. Collections\wholesales_collections_create.resx">
+      <DependentUpon>wholesales_collections_create.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\2. Wholesales\5. Collections\wholesales_collections_edited.resx">
+      <DependentUpon>wholesales_collections_edited.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\2. Wholesales\5. Collections\wholesales_collections_search.resx">
+      <DependentUpon>wholesales_collections_search.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\2. Wholesales\5. Collections\wholesales_collections_show.resx">
+      <DependentUpon>wholesales_collections_show.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\2. Wholesales\7. Orders\wholesales_orders_closed.resx">
+      <DependentUpon>wholesales_orders_closed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\2. Wholesales\7. Orders\wholesales_orders_created.resx">
+      <DependentUpon>wholesales_orders_created.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\2. Wholesales\7. Orders\wholesales_orders_dispach.resx">
+      <DependentUpon>wholesales_orders_dispach.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\2. Wholesales\7. Orders\wholesales_orders_edited.resx">
+      <DependentUpon>wholesales_orders_edited.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\2. Wholesales\7. Orders\wholesales_orders_products.resx">
+      <DependentUpon>wholesales_orders_products.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\2. Wholesales\7. Orders\wholesales_orders_showed.resx">
+      <DependentUpon>wholesales_orders_showed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\2. Wholesales\7. Orders\wholesales_orders_status.resx">
+      <DependentUpon>wholesales_orders_status.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\2. Wholesales\7. Orders\wholesales_orders_transfer.resx">
+      <DependentUpon>wholesales_orders_transfer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\2. Wholesales\7. Orders\wholesales_orders_viewers.resx">
+      <DependentUpon>wholesales_orders_viewers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\2. Wholesales\8. Deliverys\wholesales_deliverys_closed.resx">
+      <DependentUpon>wholesales_deliverys_closed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\2. Wholesales\8. Deliverys\wholesales_deliverys_create.resx">
+      <DependentUpon>wholesales_deliverys_create.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\2. Wholesales\8. Deliverys\wholesales_deliverys_document.resx">
+      <DependentUpon>wholesales_deliverys_document.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\2. Wholesales\8. Deliverys\wholesales_deliverys_edited.resx">
+      <DependentUpon>wholesales_deliverys_edited.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\2. Wholesales\8. Deliverys\wholesales_deliverys_products.resx">
+      <DependentUpon>wholesales_deliverys_products.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\2. Wholesales\8. Deliverys\wholesales_deliverys_showed.resx">
+      <DependentUpon>wholesales_deliverys_showed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\2. Wholesales\8. Deliverys\wholesales_deliverys_status.resx">
+      <DependentUpon>wholesales_deliverys_status.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\2. Wholesales\8. Deliverys\wholesales_deliverys_transfer.resx">
+      <DependentUpon>wholesales_deliverys_transfer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\3. Commision\0. Rules\commision_rules_create.resx">
+      <DependentUpon>commision_rules_create.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\3. Commision\0. Rules\commision_rules_edited.resx">
+      <DependentUpon>commision_rules_edited.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\3. Commision\0. Rules\commision_rules_show.resx">
+      <DependentUpon>commision_rules_show.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\3. Commision\0. Rules\commision_rules_view.resx">
+      <DependentUpon>commision_rules_view.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\3. Commision\1. Schema\a. Schemas\commision_schema_create.resx">
+      <DependentUpon>commision_schema_create.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\3. Commision\1. Schema\a. Schemas\commision_schema_edited.resx">
+      <DependentUpon>commision_schema_edited.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\3. Commision\1. Schema\a. Schemas\commision_schema_show.resx">
+      <DependentUpon>commision_schema_show.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\3. Commision\1. Schema\b. Tables\commision_tables_create.resx">
+      <DependentUpon>commision_tables_create.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\3. Commision\1. Schema\b. Tables\commision_tables_edited.resx">
+      <DependentUpon>commision_tables_edited.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\3. Commision\1. Schema\b. Tables\commision_tables_showed.resx">
+      <DependentUpon>commision_tables_showed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\3. Commision\2. Conditions\commision_conditions_create.resx">
+      <DependentUpon>commision_conditions_create.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\3. Commision\2. Conditions\commision_conditions_edited.resx">
+      <DependentUpon>commision_conditions_edited.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\3. Commision\2. Conditions\commision_conditions_show.resx">
+      <DependentUpon>commision_conditions_show.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\3. Commision\3. Counts\conditions_counts_create.resx">
+      <DependentUpon>conditions_counts_create.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\3. Commision\3. Counts\conditions_counts_show.resx">
+      <DependentUpon>conditions_counts_show.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\3. Commision\4. Scales\conditions_scales_create.resx">
+      <DependentUpon>conditions_scales_create.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\3. Commision\4. Scales\conditions_scales_edited.resx">
+      <DependentUpon>conditions_scales_edited.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\3. Commision\4. Scales\conditions_scales_show.resx">
+      <DependentUpon>conditions_scales_show.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\3. Commision\5. Values\commision_values_create.resx">
+      <DependentUpon>commision_values_create.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\3. Commision\5. Values\commision_values_edited.resx">
+      <DependentUpon>commision_values_edited.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\3. Commision\5. Values\commision_values_show.resx">
+      <DependentUpon>commision_values_show.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\3. Commision\6. Settleds\commision_settleds_create.resx">
+      <DependentUpon>commision_settleds_create.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\3. Commision\6. Settleds\commision_settleds_edited.resx">
+      <DependentUpon>commision_settleds_edited.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\3. Commision\6. Settleds\commision_settleds_excludes.resx">
+      <DependentUpon>commision_settleds_excludes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\3. Commision\6. Settleds\commision_settleds_manual.resx">
+      <DependentUpon>commision_settleds_manual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\3. Commision\6. Settleds\commision_settleds_search.resx">
+      <DependentUpon>commision_settleds_search.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\3. Commision\6. Settleds\commision_settleds_slopes.resx">
+      <DependentUpon>commision_settleds_slopes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\3. Commision\6. Settleds\Subsettleds\commision_subsettleds_create.resx">
+      <DependentUpon>commision_subsettleds_create.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\3. Commision\7. Periods\commision_periods_create.resx">
+      <DependentUpon>commision_periods_create.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\3. Commision\7. Periods\commision_periods_edited.resx">
+      <DependentUpon>commision_periods_edited.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\3. Commision\7. Periods\commision_periods_search.resx">
+      <DependentUpon>commision_periods_search.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\3. Commision\7. Periods\commision_periods_show.resx">
+      <DependentUpon>commision_periods_show.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\3. Commision\8. Searchs\commision_searched_discount.resx">
+      <DependentUpon>commision_searched_discount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\3. Commision\8. Searchs\commision_searched_show.resx">
+      <DependentUpon>commision_searched_show.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\3. Commision\6. Settleds\Subsettleds\commision_subsettleds_search.resx">
+      <DependentUpon>commision_subsettleds_search.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\3. Commision\9. Proofs\commision_proofs_reported.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>commision_proofs_reported.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\3. Commision\9. Proofs\commision_proofs_showed.resx">
+      <DependentUpon>commision_proofs_showed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\3. Commision\9. Proofs\commision_proofs_subsettled.resx">
+      <DependentUpon>commision_proofs_subsettled.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\3. Commision\9. Proofs\commision_proofs_viewer.resx">
+      <DependentUpon>commision_proofs_viewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\4. Tasked\1. Masters\tasks_masters_closed.resx">
+      <DependentUpon>tasks_masters_closed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\4. Tasked\1. Masters\tasks_masters_created.resx">
+      <DependentUpon>tasks_masters_created.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\4. Tasked\1. Masters\tasks_masters_search.resx">
+      <DependentUpon>tasks_masters_search.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\4. Tasked\1. Masters\tasks_masters_showed.resx">
+      <DependentUpon>tasks_masters_showed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\4. Tasked\1. Masters\tasks_masters_transfer.resx">
+      <DependentUpon>tasks_masters_transfer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\4. Tasked\2. Category\tasks_category_create.resx">
+      <DependentUpon>tasks_category_create.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\4. Tasked\2. Category\tasks_category_edited.resx">
+      <DependentUpon>tasks_category_edited.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\4. Tasked\2. Category\tasks_category_showed.resx">
+      <DependentUpon>tasks_category_showed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\4. Tasked\3. Items\tasks_items_create.resx">
+      <DependentUpon>tasks_items_create.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\4. Tasked\3. Items\tasks_items_edited.resx">
+      <DependentUpon>tasks_items_edited.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\4. Tasked\3. Items\tasks_items_showed.resx">
+      <DependentUpon>tasks_items_showed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\5. Reporting\0. Dashboard\reporting_dashboard_leaders.resx">
+      <DependentUpon>reporting_dashboard_leaders.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\5. Reporting\0. Dashboard\reporting_dashboard_personal.resx">
+      <DependentUpon>reporting_dashboard_personal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\5. Reporting\0. Dashboard\reporting_dashboard_showed.resx">
+      <DependentUpon>reporting_dashboard_showed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\5. Reporting\1. Wholesales\Reporting\reports_wholesales_category.rdlc" />
+    <EmbeddedResource Include="UI\5. Reporting\1. Wholesales\Reporting\reports_wholesales_product.rdlc" />
+    <EmbeddedResource Include="UI\5. Reporting\1. Wholesales\reports_wholesales_category.resx">
+      <DependentUpon>reports_wholesales_category.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\5. Reporting\1. Wholesales\Reporting\reports_wholesales_dealer.rdlc" />
+    <EmbeddedResource Include="UI\5. Reporting\1. Wholesales\reports_wholesales_consolidate.resx">
+      <DependentUpon>reports_wholesales_consolidate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\5. Reporting\1. Wholesales\reports_wholesales_dealer.resx">
+      <DependentUpon>reports_wholesales_dealer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\5. Reporting\1. Wholesales\Reporting\reports_wholesales_segment.rdlc" />
+    <EmbeddedResource Include="UI\5. Reporting\1. Wholesales\reports_wholesales_deliverys.resx">
+      <DependentUpon>reports_wholesales_deliverys.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\5. Reporting\1. Wholesales\reports_wholesales_margined.resx">
+      <DependentUpon>reports_wholesales_margined.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\5. Reporting\1. Wholesales\reports_wholesales_orders.resx">
+      <DependentUpon>reports_wholesales_orders.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\5. Reporting\1. Wholesales\reports_wholesales_product.resx">
+      <DependentUpon>reports_wholesales_product.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\5. Reporting\1. Wholesales\reports_wholesales_resumen.resx">
+      <DependentUpon>reports_wholesales_resumen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\5. Reporting\1. Wholesales\reports_wholesales_segment.resx">
+      <DependentUpon>reports_wholesales_segment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\5. Reporting\2. Datacredits\reports_datacredits_resumen.resx">
+      <DependentUpon>reports_datacredits_resumen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\5. Reporting\3. Collections\reports_collections_resumen.resx">
+      <DependentUpon>reports_collections_resumen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\5. Reporting\4. Guarantees\reports_guarantees_resumen.resx">
+      <DependentUpon>reports_guarantees_resumen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\5. Reporting\5. Attentions\reports_attentions_resumen.resx">
+      <DependentUpon>reports_attentions_resumen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\5. Reporting\6. Siesa\reports_siesa_facturate.resx">
+      <DependentUpon>reports_siesa_facturate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\5. Reporting\6. Siesa\reports_siesa_inventory.rdlc" />
+    <EmbeddedResource Include="UI\5. Reporting\6. Siesa\reports_siesa_inventory.resx">
+      <DependentUpon>reports_siesa_inventory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\5. Reporting\6. Siesa\reports_siesa_seriales.resx">
+      <DependentUpon>reports_siesa_seriales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\5. Reporting\7. Payments\reports_payments_resumen.resx">
+      <DependentUpon>reports_payments_resumen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\5. Reporting\8. Comission\reporting_comission_resumen.rdlc" />
+    <EmbeddedResource Include="UI\5. Reporting\8. Comission\reporting_comission_resumen.resx">
+      <DependentUpon>reporting_comission_resumen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\6. Settings\0. Permits\settings_permission_created.resx">
+      <DependentUpon>settings_permission_created.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\6. Settings\0. Permits\settings_permission_show.resx">
+      <DependentUpon>settings_permission_show.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\6. Settings\3. Agencys\settings_agencys_created.resx">
+      <DependentUpon>settings_agencys_created.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\6. Settings\3. Agencys\settings_agencys_edited.resx">
+      <DependentUpon>settings_agencys_edited.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\6. Settings\6. Workforce\b. Helpers\persons_password_create.resx">
+      <DependentUpon>persons_password_create.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\6. Settings\6. Workforce\c. Budgets\settings_budgets_create.resx">
+      <DependentUpon>settings_budgets_create.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\6. Settings\6. Workforce\c. Budgets\settings_budgets_edited.resx">
+      <DependentUpon>settings_budgets_edited.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\6. Settings\8. Services\1. Brand\services_brands_create.resx">
+      <DependentUpon>services_brands_create.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\6. Settings\8. Services\1. Brand\services_brands_edited.resx">
+      <DependentUpon>services_brands_edited.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\6. Settings\8. Services\1. Brand\services_brands_show.resx">
+      <DependentUpon>services_brands_show.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\6. Settings\8. Services\2. Categorys\services_categorys_create.resx">
+      <DependentUpon>services_categorys_create.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\6. Settings\8. Services\2. Categorys\services_categorys_edited.resx">
+      <DependentUpon>services_categorys_edited.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\6. Settings\8. Services\2. Categorys\services_categorys_show.resx">
+      <DependentUpon>services_categorys_show.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\6. Settings\8. Services\3. Products\services_products_create.resx">
+      <DependentUpon>services_products_create.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\6. Settings\8. Services\3. Products\services_products_edited.resx">
+      <DependentUpon>services_products_edited.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\6. Settings\8. Services\3. Products\services_products_objects.resx">
+      <DependentUpon>services_products_objects.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\6. Settings\8. Services\3. Products\services_products_properties.resx">
+      <DependentUpon>services_products_properties.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\6. Settings\8. Services\3. Products\services_products_show.resx">
+      <DependentUpon>services_products_show.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\6. Settings\1. Operators\settings_operators_create.resx">
+      <DependentUpon>settings_operators_create.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\6. Settings\1. Operators\settings_operators_edited.resx">
+      <DependentUpon>settings_operators_edited.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\6. Settings\1. Operators\settings_operators_show.resx">
+      <DependentUpon>settings_operators_show.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\6. Settings\2. Positions\settings_positions_create.resx">
+      <DependentUpon>settings_positions_create.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\6. Settings\2. Positions\settings_positions_edited.resx">
+      <DependentUpon>settings_positions_edited.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\6. Settings\2. Positions\settings_positions_show.resx">
+      <DependentUpon>settings_positions_show.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\6. Settings\3. Agencys\settings_agencys_show.resx">
+      <DependentUpon>settings_agencys_show.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\6. Settings\4. Channels\settings_channels_create.resx">
+      <DependentUpon>settings_channels_create.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\6. Settings\4. Channels\settings_channels_edited.resx">
+      <DependentUpon>settings_channels_edited.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\6. Settings\4. Channels\settings_channels_show.resx">
+      <DependentUpon>settings_channels_show.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\6. Settings\5. Dealers\Asigned\dealers_assign_create.resx">
+      <DependentUpon>dealers_assign_create.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\6. Settings\5. Dealers\Asigned\dealers_assign_show.resx">
+      <DependentUpon>dealers_assign_show.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\6. Settings\5. Dealers\settings_dealers_create.resx">
+      <DependentUpon>settings_dealers_create.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\6. Settings\5. Dealers\settings_dealers_edited.resx">
+      <DependentUpon>settings_dealers_edited.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\6. Settings\5. Dealers\settings_dealers_show.resx">
+      <DependentUpon>settings_dealers_show.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\6. Settings\6. Workforce\a. Persons\settings_persons_create.resx">
+      <DependentUpon>settings_persons_create.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\6. Settings\6. Workforce\a. Persons\settings_persons_edited.resx">
+      <DependentUpon>settings_persons_edited.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\6. Settings\6. Workforce\a. Persons\settings_persons_resume.resx">
+      <DependentUpon>settings_persons_resume.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\6. Settings\6. Workforce\a. Persons\settings_persons_show.resx">
+      <DependentUpon>settings_persons_show.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\6. Settings\6. Workforce\b. Helpers\persons_agencys_create.resx">
+      <DependentUpon>persons_agencys_create.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\6. Settings\6. Workforce\b. Helpers\persons_channels_create.resx">
+      <DependentUpon>persons_channels_create.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\6. Settings\6. Workforce\b. Helpers\persons_directors_create.resx">
+      <DependentUpon>persons_directors_create.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\6. Settings\6. Workforce\b. Helpers\persons_leaders_create.resx">
+      <DependentUpon>persons_leaders_create.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\6. Settings\6. Workforce\b. Helpers\persons_permits_create.resx">
+      <DependentUpon>persons_permits_create.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\6. Settings\6. Workforce\b. Helpers\persons_users_create.resx">
+      <DependentUpon>persons_users_create.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\6. Settings\7. Directors\settings_directors_create.resx">
+      <DependentUpon>settings_directors_create.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\6. Settings\7. Directors\settings_directors_edited.resx">
+      <DependentUpon>settings_directors_edited.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\6. Settings\7. Directors\settings_directors_show.resx">
+      <DependentUpon>settings_directors_show.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\6. Settings\8. Services\4. Providers\services_providers_created.resx">
+      <DependentUpon>services_providers_created.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\6. Settings\8. Services\4. Providers\services_providers_edited.resx">
+      <DependentUpon>services_providers_edited.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\6. Settings\8. Services\4. Providers\services_providers_show.resx">
+      <DependentUpon>services_providers_show.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\6. Settings\9. Audited\settings_audited_searched.resx">
+      <DependentUpon>settings_audited_searched.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\6. Settings\9. Audited\settings_audited_showed.resx">
+      <DependentUpon>settings_audited_showed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\6. Settings\9. Causals\settings_causals_create.resx">
+      <DependentUpon>settings_causals_create.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\6. Settings\9. Causals\settings_causals_edited.resx">
+      <DependentUpon>settings_causals_edited.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\6. Settings\9. Causals\settings_causals_show.resx">
+      <DependentUpon>settings_causals_show.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <EmbeddedResource Include="BIMv4_Key.pfx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Model\6. Database\BIM.xsc">
+      <DependentUpon>BIM.xsd</DependentUpon>
+    </None>
+    <None Include="Model\6. Database\BIM.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BIM.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Model\6. Database\BIM.xss">
+      <DependentUpon>BIM.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bim_ico.ico" />
+    <None Include="Resources\options_gray.png" />
+    <None Include="Resources\options_right.png" />
+    <None Include="Resources\options_left.png" />
+    <None Include="Resources\photo_default.png" />
+    <None Include="Resources\photo_women.jpg" />
+    <None Include="Resources\photo_men.png" />
+    <None Include="Resources\options_white.png" />
+    <None Include="Resources\options_settings.png" />
+    <None Include="Resources\options_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="SHDocVw">
+      <Guid>{EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="BIM.pdb">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="BIM.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="log4net">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.DataVisualization">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.ProcessingObjectModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.Types">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.Vbe.Interop">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="office">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
